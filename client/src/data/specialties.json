@@ -1,0 +1,463 @@
+[
+  {
+    "id": "ophthalmology",
+    "name": "Ophthalmology",
+    "category": "Diagnostics",
+    "description": "A precision specialty combining visual science, clinic-based diagnosis, microsurgery, lasers, and long-term patient relationships.",
+    "image": "/assets/media/specialty-ophthalmology.jpg",
+    "trainingYearsByCountry": {
+      "usa": "1 preliminary year + 3-year ophthalmology residency (about 4 years total)",
+      "uk": "About 7 years including core ophthalmology and higher specialty training",
+      "australia": "5-year RANZCO specialist training program after prevocational requirements",
+      "canada": "5-year residency",
+      "germany": "About 5 years specialty training",
+      "ireland": "About 7 years including basic and higher specialist training"
+    },
+    "salaryByCountry": {
+      "usa": "$250k\u2013$450k qualified specialist; $65k\u2013$80k during training",
+      "uk": "\u00a390k\u2013\u00a3160k qualified specialist; \u00a339k\u2013\u00a368k during training",
+      "australia": "A$180k\u2013$350k qualified specialist; A$85k\u2013$118k during training",
+      "canada": "C$220k\u2013$450k qualified specialist; C$61k\u2013$84k during training",
+      "germany": "\u20ac100k\u2013\u20ac200k qualified specialist; \u20ac60k\u2013\u20ac78k during training",
+      "ireland": "\u20ac120k\u2013\u20ac220k qualified specialist; \u20ac41k\u2013\u20ac72k during training"
+    },
+    "salaryLabel": "Indicative gross annual range; qualified consultant/specialist first, trainee range second",
+    "competitiveness": "Very high",
+    "workStyle": "Precision-led, visual, and clinic-based",
+    "tags": [
+      "Vision",
+      "Microsurgery",
+      "Imaging"
+    ],
+    "subspecialties": [
+      "Retina and vitreoretinal surgery",
+      "Glaucoma",
+      "Cornea and external disease",
+      "Oculoplastics",
+      "Paediatric ophthalmology and strabismus",
+      "Uveitis",
+      "Neuro-ophthalmology"
+    ],
+    "coreWork": [
+      "Perform detailed eye examinations and interpret imaging",
+      "Manage cataract, glaucoma, retinal, corneal, and inflammatory disease",
+      "Use lasers and microsurgical techniques where trained",
+      "Explain risk, prognosis, and treatment choices clearly to patients"
+    ],
+    "pathwaySteps": [
+      "Build a strong foundation in anatomy, optics, and general medicine",
+      "Complete ophthalmology rotations, examinations, and surgical logbooks",
+      "Develop safe skills in clinics, emergency eye care, lasers, and theatre",
+      "Add fellowship training for a subspecialty or advanced surgical practice"
+    ],
+    "goodFit": [
+      "You enjoy fine detail, visual diagnosis, and delicate technical work",
+      "You value measurable improvements in function and quality of life",
+      "You want a specialty with a strong outpatient and planned-surgery component"
+    ],
+    "watchOuts": [
+      "Microsurgical skills require patience and high-volume deliberate practice",
+      "Training places can be limited and highly competitive",
+      "Emergency eye care still includes time-critical presentations and on-call work"
+    ],
+    "referenceLinks": [
+      {
+        "label": "ACGME ophthalmology requirements",
+        "url": "https://www.acgme.org/specialties/ophthalmology/program-requirements-and-faqs-and-applications/"
+      },
+      {
+        "label": "Royal College of Ophthalmologists curriculum",
+        "url": "https://www.rcophth.ac.uk/training/curriculum/"
+      }
+    ]
+  },
+  {
+    "id": "orthopaedic-surgery",
+    "name": "Orthopaedic Surgery",
+    "category": "Surgery",
+    "description": "A hands-on surgical discipline focused on bones, joints, muscles, nerves, trauma, function, and restoring movement.",
+    "image": "/assets/media/specialty-orthopedics.jpg",
+    "trainingYearsByCountry": {
+      "usa": "5-year residency",
+      "uk": "About 8 years including foundation and core surgical training",
+      "australia": "5-year specialist training program after prevocational requirements",
+      "canada": "5-year residency",
+      "germany": "About 6 years in orthopaedics and trauma surgery",
+      "ireland": "About 8 years including core and higher specialist training"
+    },
+    "salaryByCountry": {
+      "usa": "$400k\u2013$700k qualified specialist; $66k\u2013$84k during training",
+      "uk": "\u00a3105k\u2013\u00a3190k qualified specialist; \u00a339k\u2013\u00a370k during training",
+      "australia": "A$220k\u2013$500k qualified specialist; A$85k\u2013$120k during training",
+      "canada": "C$350k\u2013$650k qualified specialist; C$61k\u2013$86k during training",
+      "germany": "\u20ac120k\u2013\u20ac250k qualified specialist; \u20ac60k\u2013\u20ac80k during training",
+      "ireland": "\u20ac150k\u2013\u20ac280k qualified specialist; \u20ac41k\u2013\u20ac75k during training"
+    },
+    "salaryLabel": "Indicative gross annual range; qualified consultant/specialist first, trainee range second",
+    "competitiveness": "Very high",
+    "workStyle": "Technical, physical, and team-led",
+    "tags": [
+      "Bones & joints",
+      "Surgery",
+      "Trauma"
+    ],
+    "subspecialties": [
+      "Trauma and fracture care",
+      "Arthroplasty and joint replacement",
+      "Sports medicine",
+      "Spine surgery",
+      "Hand and upper limb",
+      "Paediatric orthopaedics",
+      "Foot and ankle",
+      "Orthopaedic oncology"
+    ],
+    "coreWork": [
+      "Assess fractures, degenerative disease, deformity, and sports injuries",
+      "Plan and perform open and minimally invasive operations",
+      "Use imaging and biomechanics to restore stability and function",
+      "Lead rehabilitation planning with physiotherapy and allied health teams"
+    ],
+    "pathwaySteps": [
+      "Develop broad surgical and emergency skills",
+      "Complete orthopaedic rotations, exams, and operative logbook requirements",
+      "Build reliable decision-making in trauma, clinics, and operating theatres",
+      "Complete fellowship training for a focused subspecialty when desired"
+    ],
+    "goodFit": [
+      "You like anatomy, mechanics, and visible functional outcomes",
+      "You enjoy technical repetition and deliberate practice",
+      "You are comfortable with theatre time, acute trauma, and physically demanding days"
+    ],
+    "watchOuts": [
+      "Training is competitive and operative competency takes sustained practice",
+      "Trauma and on-call commitments can be intense",
+      "Scope of practice and surgical credentialing are tightly regulated"
+    ],
+    "referenceLinks": [
+      {
+        "label": "ACGME orthopaedic surgery requirements",
+        "url": "https://www.acgme.org/specialties/orthopaedic-surgery/program-requirements-and-faqs-and-applications/"
+      },
+      {
+        "label": "Royal Australasian College of Surgeons",
+        "url": "https://www.surgeons.org/trainees/surgical-specialties/orthopaedic-surgery"
+      }
+    ]
+  },
+  {
+    "id": "cardiology",
+    "name": "Cardiology",
+    "category": "Medicine",
+    "description": "A physiology-driven specialty combining longitudinal cardiovascular care with high-stakes diagnostics and advanced procedures.",
+    "image": "/assets/media/specialty-cardiology.jpg",
+    "trainingYearsByCountry": {
+      "usa": "3-year fellowship after 3-year internal medicine residency (about 6 years post-medical school)",
+      "uk": "8 years including core/internal medicine training",
+      "australia": "About 6 years after medical school: basic + advanced physician training",
+      "canada": "About 6 years: 3 years internal medicine + 3 years cardiology",
+      "germany": "About 6 years in internal medicine and cardiology",
+      "ireland": "About 8 years including core and higher specialist training"
+    },
+    "salaryByCountry": {
+      "usa": "$350k\u2013$650k qualified specialist; $65k\u2013$82k during training",
+      "uk": "\u00a3110k\u2013\u00a3180k qualified specialist; \u00a339k\u2013\u00a370k during training",
+      "australia": "A$200k\u2013$450k qualified specialist; A$85k\u2013$120k during training",
+      "canada": "C$300k\u2013$550k qualified specialist; C$61k\u2013$86k during training",
+      "germany": "\u20ac120k\u2013\u20ac230k qualified specialist; \u20ac60k\u2013\u20ac80k during training",
+      "ireland": "\u20ac150k\u2013\u20ac260k qualified specialist; \u20ac41k\u2013\u20ac75k during training"
+    },
+    "salaryLabel": "Indicative gross annual range; qualified consultant/specialist first, trainee range second",
+    "competitiveness": "High",
+    "workStyle": "Analytical, acute, and procedure-oriented",
+    "tags": [
+      "Heart health",
+      "Diagnostics",
+      "Procedures"
+    ],
+    "subspecialties": [
+      "Interventional cardiology",
+      "Electrophysiology",
+      "Heart failure and transplant",
+      "Cardiac imaging",
+      "Preventive cardiology",
+      "Adult congenital heart disease"
+    ],
+    "coreWork": [
+      "Interpret ECG, echocardiography, CT, and MRI findings",
+      "Manage acute coronary syndromes, arrhythmias, and heart failure",
+      "Perform or assist with catheter-based procedures depending on training",
+      "Coordinate multidisciplinary decisions with surgery, emergency, and critical care teams"
+    ],
+    "pathwaySteps": [
+      "Build a strong internal medicine foundation",
+      "Complete cardiology-specific training and logbook requirements",
+      "Develop competence in imaging, acute care, and procedural decision-making",
+      "Choose a focused subspecialty, research track, or general cardiology practice"
+    ],
+    "goodFit": [
+      "You enjoy physiology and pattern recognition",
+      "You are comfortable making decisions with incomplete information",
+      "You want a mix of clinic, ward, emergency, and procedure time"
+    ],
+    "watchOuts": [
+      "Frequent out-of-hours and emergency work can be demanding",
+      "Subspecialty procedures often require additional fellowship time",
+      "Licensing, exam, and training eligibility rules vary by country and applicant status"
+    ],
+    "referenceLinks": [
+      {
+        "label": "ACGME internal medicine & cardiovascular disease requirements",
+        "url": "https://www.acgme.org/specialties/internal-medicine/program-requirements-and-faqs-and-applications/"
+      },
+      {
+        "label": "GMC cardiology curriculum",
+        "url": "https://www.gmc-uk.org/education/standards-guidance-and-curricula/curricula/cardiology-curriculum"
+      }
+    ]
+  },
+  {
+    "id": "internal-medicine",
+    "name": "Internal Medicine",
+    "category": "Medicine",
+    "description": "For clinicians who enjoy diagnostic depth, complex patients, and longitudinal relationships across adult care.",
+    "trainingYearsByCountry": {
+      "usa": "3 years",
+      "uk": "3 years",
+      "australia": "3 years",
+      "canada": "4 years",
+      "germany": "5\u20136 years",
+      "ireland": "4\u20136 years",
+      "saudi-arabia": "4 years",
+      "uae": "4 years",
+      "qatar": "4 years"
+    },
+    "salaryByCountry": {
+      "usa": "$64k\u2013$76k",
+      "uk": "\u00a337k\u2013\u00a358k",
+      "australia": "A$85k\u2013$108k",
+      "canada": "C$61k\u2013$78k",
+      "germany": "\u20ac60k\u2013\u20ac72k",
+      "ireland": "\u20ac40k\u2013\u20ac55k",
+      "saudi-arabia": "SAR 16k\u201322k",
+      "uae": "AED 14k\u201320k",
+      "qatar": "QAR 16k\u201322k"
+    },
+    "competitiveness": "Moderate",
+    "workStyle": "Analytical and relationship-led",
+    "tags": [
+      "Diagnostic reasoning",
+      "Adult health",
+      "Broad foundation"
+    ]
+  },
+  {
+    "id": "family-medicine",
+    "name": "Family Medicine",
+    "category": "Medicine",
+    "description": "A people-centred specialty spanning life stages, preventive care, and the context that shapes a patient's health.",
+    "trainingYearsByCountry": {
+      "usa": "3 years",
+      "uk": "3 years",
+      "australia": "4 years",
+      "canada": "2 years",
+      "germany": "5 years",
+      "ireland": "4 years",
+      "saudi-arabia": "4 years",
+      "uae": "4 years",
+      "qatar": "4 years"
+    },
+    "salaryByCountry": {
+      "usa": "$61k\u2013$72k",
+      "uk": "\u00a336k\u2013\u00a356k",
+      "australia": "A$82k\u2013$110k",
+      "canada": "C$60k\u2013$77k",
+      "germany": "\u20ac60k\u2013\u20ac70k",
+      "ireland": "\u20ac40k\u2013\u20ac54k",
+      "saudi-arabia": "SAR 15k\u201321k",
+      "uae": "AED 13k\u201319k",
+      "qatar": "QAR 15k\u201321k"
+    },
+    "competitiveness": "Moderate",
+    "workStyle": "People-centred and varied",
+    "tags": [
+      "Continuity",
+      "Prevention",
+      "Community"
+    ]
+  },
+  {
+    "id": "paediatrics",
+    "name": "Paediatrics",
+    "category": "Medicine",
+    "description": "Care for infants, children, and adolescents with a blend of acute decision-making and family partnership.",
+    "trainingYearsByCountry": {
+      "usa": "3 years",
+      "uk": "8 years",
+      "australia": "6 years",
+      "canada": "4 years",
+      "germany": "5\u20136 years",
+      "ireland": "5\u20137 years",
+      "saudi-arabia": "5 years",
+      "uae": "5 years",
+      "qatar": "5 years"
+    },
+    "salaryByCountry": {
+      "usa": "$63k\u2013$75k",
+      "uk": "\u00a337k\u2013\u00a361k",
+      "australia": "A$84k\u2013$112k",
+      "canada": "C$61k\u2013$80k",
+      "germany": "\u20ac61k\u2013\u20ac74k",
+      "ireland": "\u20ac41k\u2013\u20ac58k",
+      "saudi-arabia": "SAR 16k\u201323k",
+      "uae": "AED 14k\u201321k",
+      "qatar": "QAR 16k\u201323k"
+    },
+    "competitiveness": "High",
+    "workStyle": "Fast-paced and collaborative",
+    "tags": [
+      "Child health",
+      "Family partnership",
+      "Acute care"
+    ]
+  },
+  {
+    "id": "psychiatry",
+    "name": "Psychiatry",
+    "category": "Medicine",
+    "description": "A reflective, communication-rich specialty built around mental health, recovery, and the whole person.",
+    "trainingYearsByCountry": {
+      "usa": "4 years",
+      "uk": "6 years",
+      "australia": "5 years",
+      "canada": "5 years",
+      "germany": "5 years",
+      "ireland": "6 years",
+      "saudi-arabia": "4 years",
+      "uae": "4 years",
+      "qatar": "4 years"
+    },
+    "salaryByCountry": {
+      "usa": "$68k\u2013$80k",
+      "uk": "\u00a338k\u2013\u00a365k",
+      "australia": "A$86k\u2013$115k",
+      "canada": "C$62k\u2013$82k",
+      "germany": "\u20ac62k\u2013\u20ac75k",
+      "ireland": "\u20ac42k\u2013\u20ac60k",
+      "saudi-arabia": "SAR 17k\u201325k",
+      "uae": "AED 15k\u201322k",
+      "qatar": "QAR 17k\u201324k"
+    },
+    "competitiveness": "High",
+    "workStyle": "Reflective and communication-led",
+    "tags": [
+      "Mental health",
+      "Listening",
+      "Recovery"
+    ]
+  },
+  {
+    "id": "general-surgery",
+    "name": "General Surgery",
+    "category": "Surgery",
+    "description": "For decisive, hands-on clinicians who thrive in theatre, acute care, and a technically demanding pathway.",
+    "trainingYearsByCountry": {
+      "usa": "5 years",
+      "uk": "8 years",
+      "australia": "5\u20136 years",
+      "canada": "5 years",
+      "germany": "6 years",
+      "ireland": "8 years",
+      "saudi-arabia": "5 years",
+      "uae": "5 years",
+      "qatar": "5 years"
+    },
+    "salaryByCountry": {
+      "usa": "$67k\u2013$79k",
+      "uk": "\u00a338k\u2013\u00a367k",
+      "australia": "A$87k\u2013$118k",
+      "canada": "C$63k\u2013$84k",
+      "germany": "\u20ac63k\u2013\u20ac78k",
+      "ireland": "\u20ac42k\u2013\u20ac62k",
+      "saudi-arabia": "SAR 17k\u201325k",
+      "uae": "AED 15k\u201323k",
+      "qatar": "QAR 17k\u201325k"
+    },
+    "competitiveness": "Very high",
+    "workStyle": "Hands-on and decisive",
+    "tags": [
+      "Procedures",
+      "Acute care",
+      "Team leadership"
+    ]
+  },
+  {
+    "id": "radiology",
+    "name": "Radiology",
+    "category": "Diagnostics",
+    "description": "A visual and analytical discipline connecting imaging expertise to almost every area of medicine.",
+    "trainingYearsByCountry": {
+      "usa": "5 years",
+      "uk": "5\u20136 years",
+      "australia": "5 years",
+      "canada": "5 years",
+      "germany": "5 years",
+      "ireland": "5 years",
+      "saudi-arabia": "5 years",
+      "uae": "5 years",
+      "qatar": "5 years"
+    },
+    "salaryByCountry": {
+      "usa": "$66k\u2013$78k",
+      "uk": "\u00a337k\u2013\u00a362k",
+      "australia": "A$86k\u2013$116k",
+      "canada": "C$62k\u2013$83k",
+      "germany": "\u20ac62k\u2013\u20ac76k",
+      "ireland": "\u20ac42k\u2013\u20ac59k",
+      "saudi-arabia": "SAR 17k\u201324k",
+      "uae": "AED 15k\u201322k",
+      "qatar": "QAR 17k\u201324k"
+    },
+    "competitiveness": "Very high",
+    "workStyle": "Visual and analytical",
+    "tags": [
+      "Imaging",
+      "Technology",
+      "Consultative"
+    ]
+  },
+  {
+    "id": "anaesthesiology",
+    "name": "Anaesthesiology",
+    "category": "Acute care",
+    "description": "A physiology-first specialty balancing precision, calm under pressure, and procedural confidence.",
+    "trainingYearsByCountry": {
+      "usa": "4 years",
+      "uk": "7\u20138 years",
+      "australia": "5 years",
+      "canada": "5 years",
+      "germany": "5 years",
+      "ireland": "6 years",
+      "saudi-arabia": "5 years",
+      "uae": "5 years",
+      "qatar": "5 years"
+    },
+    "salaryByCountry": {
+      "usa": "$66k\u2013$78k",
+      "uk": "\u00a337k\u2013\u00a365k",
+      "australia": "A$86k\u2013$117k",
+      "canada": "C$62k\u2013$83k",
+      "germany": "\u20ac62k\u2013\u20ac76k",
+      "ireland": "\u20ac42k\u2013\u20ac60k",
+      "saudi-arabia": "SAR 17k\u201325k",
+      "uae": "AED 15k\u201323k",
+      "qatar": "QAR 17k\u201325k"
+    },
+    "competitiveness": "High",
+    "workStyle": "Calm and procedure-oriented",
+    "tags": [
+      "Physiology",
+      "Procedures",
+      "Critical care"
+    ]
+  }
+]

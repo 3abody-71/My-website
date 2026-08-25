@@ -1,0 +1,292 @@
+[
+  {
+    "value": "AF",
+    "name": "Afghanistan",
+    "region": "Asia"
+  },
+  {
+    "value": "AL",
+    "name": "Albania",
+    "region": "Europe"
+  },
+  {
+    "value": "DZ",
+    "name": "Algeria",
+    "region": "Africa"
+  },
+  {
+    "value": "AR",
+    "name": "Argentina",
+    "region": "South America"
+  },
+  {
+    "value": "AZ",
+    "name": "Azerbaijan",
+    "region": "Asia"
+  },
+  {
+    "value": "BH",
+    "name": "Bahrain",
+    "region": "Gulf region"
+  },
+  {
+    "value": "BD",
+    "name": "Bangladesh",
+    "region": "Asia"
+  },
+  {
+    "value": "BJ",
+    "name": "Benin",
+    "region": "Africa"
+  },
+  {
+    "value": "BR",
+    "name": "Brazil",
+    "region": "South America"
+  },
+  {
+    "value": "BF",
+    "name": "Burkina Faso",
+    "region": "Africa"
+  },
+  {
+    "value": "CM",
+    "name": "Cameroon",
+    "region": "Africa"
+  },
+  {
+    "value": "CA",
+    "name": "Canada",
+    "region": "North America"
+  },
+  {
+    "value": "TD",
+    "name": "Chad",
+    "region": "Africa"
+  },
+  {
+    "value": "CN",
+    "name": "China",
+    "region": "Asia"
+  },
+  {
+    "value": "CO",
+    "name": "Colombia",
+    "region": "South America"
+  },
+  {
+    "value": "CD",
+    "name": "Congo (DRC)",
+    "region": "Africa"
+  },
+  {
+    "value": "DJ",
+    "name": "Djibouti",
+    "region": "Africa"
+  },
+  {
+    "value": "EG",
+    "name": "Egypt",
+    "region": "Africa"
+  },
+  {
+    "value": "ER",
+    "name": "Eritrea",
+    "region": "Africa"
+  },
+  {
+    "value": "ET",
+    "name": "Ethiopia",
+    "region": "Africa"
+  },
+  {
+    "value": "GM",
+    "name": "Gambia",
+    "region": "Africa"
+  },
+  {
+    "value": "GH",
+    "name": "Ghana",
+    "region": "Africa"
+  },
+  {
+    "value": "GR",
+    "name": "Greece",
+    "region": "Europe"
+  },
+  {
+    "value": "GW",
+    "name": "Guinea-Bissau",
+    "region": "Africa"
+  },
+  {
+    "value": "GN",
+    "name": "Guinea",
+    "region": "Africa"
+  },
+  {
+    "value": "IN",
+    "name": "India",
+    "region": "Asia"
+  },
+  {
+    "value": "ID",
+    "name": "Indonesia",
+    "region": "Asia"
+  },
+  {
+    "value": "IQ",
+    "name": "Iraq",
+    "region": "Middle East"
+  },
+  {
+    "value": "IE",
+    "name": "Ireland",
+    "region": "Europe"
+  },
+  {
+    "value": "JO",
+    "name": "Jordan",
+    "region": "Middle East"
+  },
+  {
+    "value": "KE",
+    "name": "Kenya",
+    "region": "Africa"
+  },
+  {
+    "value": "KW",
+    "name": "Kuwait",
+    "region": "Gulf region"
+  },
+  {
+    "value": "LB",
+    "name": "Lebanon",
+    "region": "Middle East"
+  },
+  {
+    "value": "LY",
+    "name": "Libya",
+    "region": "Africa"
+  },
+  {
+    "value": "MR",
+    "name": "Mauritania",
+    "region": "Africa"
+  },
+  {
+    "value": "MA",
+    "name": "Morocco",
+    "region": "Africa"
+  },
+  {
+    "value": "NE",
+    "name": "Niger",
+    "region": "Africa"
+  },
+  {
+    "value": "NG",
+    "name": "Nigeria",
+    "region": "Africa"
+  },
+  {
+    "value": "OM",
+    "name": "Oman",
+    "region": "Gulf region"
+  },
+  {
+    "value": "PK",
+    "name": "Pakistan",
+    "region": "Asia"
+  },
+  {
+    "value": "PS",
+    "name": "Palestine",
+    "region": "Middle East"
+  },
+  {
+    "value": "QA",
+    "name": "Qatar",
+    "region": "Gulf region"
+  },
+  {
+    "value": "SA",
+    "name": "Saudi Arabia",
+    "region": "Gulf region"
+  },
+  {
+    "value": "SN",
+    "name": "Senegal",
+    "region": "Africa"
+  },
+  {
+    "value": "SL",
+    "name": "Sierra Leone",
+    "region": "Africa"
+  },
+  {
+    "value": "SO",
+    "name": "Somalia",
+    "region": "Africa"
+  },
+  {
+    "value": "ZA",
+    "name": "South Africa",
+    "region": "Africa"
+  },
+  {
+    "value": "SD",
+    "name": "Sudan",
+    "region": "Africa"
+  },
+  {
+    "value": "SY",
+    "name": "Syria",
+    "region": "Middle East"
+  },
+  {
+    "value": "TZ",
+    "name": "Tanzania",
+    "region": "Africa"
+  },
+  {
+    "value": "TN",
+    "name": "Tunisia",
+    "region": "Africa"
+  },
+  {
+    "value": "TR",
+    "name": "Türkiye",
+    "region": "Middle East"
+  },
+  {
+    "value": "AE",
+    "name": "United Arab Emirates",
+    "region": "Gulf region"
+  },
+  {
+    "value": "GB",
+    "name": "United Kingdom",
+    "region": "Europe"
+  },
+  {
+    "value": "US",
+    "name": "United States",
+    "region": "North America"
+  },
+  {
+    "value": "YE",
+    "name": "Yemen",
+    "region": "Middle East"
+  },
+  {
+    "value": "ZM",
+    "name": "Zambia",
+    "region": "Africa"
+  },
+  {
+    "value": "ZW",
+    "name": "Zimbabwe",
+    "region": "Africa"
+  }
+]

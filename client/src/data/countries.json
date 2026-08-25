@@ -1,0 +1,236 @@
+[
+  {
+    "id": "usa",
+    "name": "United States",
+    "region": "North America",
+    "flag": "US",
+    "summary": "A broad, structured system with many programs and a clear match process for international graduates.",
+    "image": "/assets/media/country-usa_24904d6d.jpg",
+    "licensingBody": "ECFMG and state medical boards",
+    "languageRequirement": "English proficiency; OET or TOEFL commonly used for ECFMG pathways",
+    "residencyRange": "3\u20137 years",
+    "salaryRange": "$61k\u2013$78k during residency",
+    "citizenshipTimeline": "Commonly 5 years as a lawful permanent resident before naturalisation eligibility; 3 years for qualifying spouses of US citizens.",
+    "officialAuthorityUrl": "https://www.uscis.gov/citizenship",
+    "requirements": [
+      "ECFMG certification",
+      "USMLE Step 1 and Step 2 CK",
+      "Clinical experience and letters of recommendation",
+      "Visa and state-specific documentation"
+    ],
+    "steps": [
+      "Create an ECFMG account and verify your medical school",
+      "Complete USMLE exams and ECFMG certification",
+      "Build US clinical experience and apply through ERAS",
+      "Interview and participate in the NRMP Match"
+    ]
+  },
+  {
+    "id": "uk",
+    "name": "United Kingdom",
+    "region": "Europe",
+    "flag": "UK",
+    "summary": "A nationally coordinated pathway with defined portfolio stages and a strong emphasis on evidence of capability.",
+    "image": "/assets/media/country-uk_33d20666.jpg",
+    "licensingBody": "General Medical Council (GMC)",
+    "languageRequirement": "IELTS Academic or OET Medicine, unless an exemption applies",
+    "residencyRange": "3\u20138 years",
+    "salaryRange": "\u00a336k\u2013\u00a370k during training",
+    "citizenshipTimeline": "Usually 5 years of residence plus settled status or ILR for 12 months; some spouse routes differ.",
+    "officialAuthorityUrl": "https://www.gov.uk/british-citizenship",
+    "requirements": [
+      "Primary source verification",
+      "PLAB or accepted alternative registration route",
+      "English language evidence",
+      "GMC registration and right to work"
+    ],
+    "steps": [
+      "Check GMC registration eligibility",
+      "Pass PLAB 1 and PLAB 2 where required",
+      "Apply for GMC registration with a licence to practise",
+      "Build NHS experience and apply through Oriel"
+    ]
+  },
+  {
+    "id": "australia",
+    "name": "Australia",
+    "region": "Oceania",
+    "flag": "AU",
+    "summary": "A supportive but competitive route with general registration stages and a practical focus on supervised work.",
+    "image": "/assets/media/country-australia_4dbe3131.jpg",
+    "licensingBody": "Australian Health Practitioner Regulation Agency (AHPRA)",
+    "languageRequirement": "IELTS, OET, PTE Academic, or TOEFL iBT",
+    "residencyRange": "3\u20137 years",
+    "salaryRange": "A$80k\u2013A$115k during training",
+    "citizenshipTimeline": "Generally 4 years lawful residence including the last 12 months as a permanent resident, subject to absence rules.",
+    "officialAuthorityUrl": "https://immi.homeaffairs.gov.au/citizenship",
+    "requirements": [
+      "AMC portfolio and primary source verification",
+      "AMC CAT MCQ and clinical assessment or approved pathway",
+      "English language standard",
+      "Supervised practice and registration"
+    ],
+    "steps": [
+      "Choose the relevant AMC pathway",
+      "Complete portfolio, exams, and verification",
+      "Secure an accredited supervised role",
+      "Progress through general or specialist training"
+    ]
+  },
+  {
+    "id": "canada",
+    "name": "Canada",
+    "region": "North America",
+    "flag": "CA",
+    "summary": "A high-barrier pathway with excellent training quality and province-specific application requirements.",
+    "image": "/assets/media/country-canada_b3c6f4ad.jpg",
+    "licensingBody": "Medical Council of Canada and provincial colleges",
+    "languageRequirement": "English or French proficiency, depending on province",
+    "residencyRange": "2\u20137 years",
+    "salaryRange": "C$60k\u2013C$85k during residency",
+    "citizenshipTimeline": "Generally 1,095 days physically present in the last 5 years, with other conditions.",
+    "officialAuthorityUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship.html",
+    "requirements": [
+      "Medical Council of Canada account and source verification",
+      "MCCQE Part I",
+      "Provincial eligibility and references",
+      "Proof of citizenship or immigration status for many programs"
+    ],
+    "steps": [
+      "Verify your degree through physiciansapply.ca",
+      "Complete MCC exams and language requirements",
+      "Review province-specific IMG criteria",
+      "Apply through CaRMS where eligible"
+    ]
+  },
+  {
+    "id": "germany",
+    "name": "Germany",
+    "region": "Europe",
+    "flag": "DE",
+    "summary": "A state-administered route where strong German language skills are central to clinical practice and licensing.",
+    "image": "/assets/media/country-germany_c6217245.jpg",
+    "licensingBody": "State Approbationsbeh\u00f6rde",
+    "languageRequirement": "German B2 plus medical language exam, usually C1 Medizin",
+    "residencyRange": "5\u20136 years",
+    "salaryRange": "\u20ac60k\u2013\u20ac78k during training",
+    "citizenshipTimeline": "Generally 5 years of lawful habitual residence, with language, livelihood, and other legal requirements.",
+    "officialAuthorityUrl": "https://www.make-it-in-germany.com/en/visa-residence/living-permanently-germany/naturalisation",
+    "requirements": [
+      "German medical language certificate",
+      "Degree equivalence review",
+      "Knowledge examination if required",
+      "Police clearance and health documentation"
+    ],
+    "steps": [
+      "Reach the required German language level",
+      "Submit documents to the relevant state authority",
+      "Pass the Fachsprachpr\u00fcfung and any knowledge exam",
+      "Obtain Approbation and apply to hospitals"
+    ]
+  },
+  {
+    "id": "ireland",
+    "name": "Ireland",
+    "region": "Europe",
+    "flag": "IE",
+    "summary": "An English-speaking European route with a mix of national registration and hospital-led training opportunities.",
+    "image": "/assets/media/country-ireland_e1ece753.jpg",
+    "licensingBody": "Medical Council of Ireland",
+    "languageRequirement": "IELTS Academic or OET Medicine",
+    "residencyRange": "4\u20138 years",
+    "salaryRange": "\u20ac40k\u2013\u20ac70k during training",
+    "citizenshipTimeline": "Generally 5 years reckonable residence in the last 9 years, including 1 continuous year immediately before applying.",
+    "officialAuthorityUrl": "https://www.irishimmigration.ie/citizenship/",
+    "requirements": [
+      "Primary source verification",
+      "PRES exam or accepted exemption",
+      "English language evidence",
+      "Medical Council registration"
+    ],
+    "steps": [
+      "Create a Medical Council application",
+      "Complete verification and language evidence",
+      "Complete PRES if required",
+      "Apply for an intern or specialist training route"
+    ]
+  },
+  {
+    "id": "saudi-arabia",
+    "name": "Saudi Arabia",
+    "region": "Gulf region",
+    "flag": "SA",
+    "summary": "A rapidly developing health system with training opportunities coordinated through national accreditation.",
+    "image": "/assets/media/country-saudi-arabia_29c403e9.jpg",
+    "licensingBody": "Saudi Commission for Health Specialties (SCFHS)",
+    "languageRequirement": "English used widely in training; Arabic helps with patient communication",
+    "residencyRange": "4\u20136 years",
+    "salaryRange": "SAR 14k\u201325k per month during training",
+    "citizenshipTimeline": "Naturalisation is discretionary and not a standard fixed student-to-passport route; long residence alone does not guarantee citizenship.",
+    "officialAuthorityUrl": "https://www.my.gov.sa/wps/portal/snp/careaboutyou/citizenship",
+    "requirements": [
+      "SCFHS classification and registration",
+      "Prometric or approved assessment where applicable",
+      "Verified degree and internship",
+      "Program-specific eligibility and visa status"
+    ],
+    "steps": [
+      "Check SCFHS classification requirements",
+      "Complete document verification and assessment",
+      "Prepare a competitive training application",
+      "Apply to accredited residency programs"
+    ]
+  },
+  {
+    "id": "uae",
+    "name": "United Arab Emirates",
+    "region": "Gulf region",
+    "flag": "AE",
+    "summary": "A multi-emirate system with respected clinical centres and licensing rules that vary by authority.",
+    "image": "/assets/media/country-uae_e6555dfc.jpg",
+    "licensingBody": "DHA, DOH, or MOHAP depending on emirate",
+    "languageRequirement": "English widely used; authority-specific evidence may apply",
+    "residencyRange": "4\u20136 years",
+    "salaryRange": "AED 12k\u201322k per month during training",
+    "citizenshipTimeline": "Citizenship is exceptional and nomination-based for eligible categories; there is no standard student-to-passport timeline.",
+    "officialAuthorityUrl": "https://u.ae/en/information-and-services/passports-and-traveling/emirati-nationality",
+    "requirements": [
+      "Relevant emirate authority eligibility",
+      "Primary source verification",
+      "Internship completion and good standing",
+      "Program-specific exam or interview"
+    ],
+    "steps": [
+      "Select the emirate and licensing authority",
+      "Complete verification and eligibility review",
+      "Compare hospital-based residency programs",
+      "Apply directly through the program portal"
+    ]
+  },
+  {
+    "id": "qatar",
+    "name": "Qatar",
+    "region": "Gulf region",
+    "flag": "QA",
+    "summary": "A focused system centred on a small number of highly regarded institutions and structured postgraduate programs.",
+    "image": "/assets/media/country-qatar_c6ddf5df.jpg",
+    "licensingBody": "Department of Healthcare Professions (DHP)",
+    "languageRequirement": "English is the principal language of postgraduate medical education",
+    "residencyRange": "4\u20136 years",
+    "salaryRange": "QAR 14k\u201323k per month during training",
+    "citizenshipTimeline": "Naturalisation is highly restricted and discretionary; ordinary long residence does not create an automatic passport route.",
+    "officialAuthorityUrl": "https://portal.www.gov.qa/wps/portal/topics/visas-and-official-documents/qatar-citizenship",
+    "requirements": [
+      "DHP eligibility and primary source verification",
+      "Recognised medical degree and internship",
+      "English language evidence where requested",
+      "Program-specific selection requirements"
+    ],
+    "steps": [
+      "Review DHP registration requirements",
+      "Verify degree and professional standing",
+      "Research Hamad Medical Corporation programs",
+      "Apply during the annual recruitment cycle"
+    ]
+  }
+]
