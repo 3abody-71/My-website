@@ -118,6 +118,8 @@ export const usaPathway = {
       result: "Three-digit score",
       body: "Step 3 is the final USMLE examination and covers diagnosis, management, prevention, clinical decisions, and computer-based case simulations.",
       subjects: ["Ambulatory, inpatient, and emergency care", "Diagnosis, laboratory studies, prognosis, and management", "Pharmacotherapy and clinical interventions", "Biostatistics, medical literature, communication, and patient safety"],
+      image: image("step3-score-report.png"),
+      imageAlt: "Example USMLE Step 3 score report",
       source: { label: "USMLE Step 3 content", url: "https://www.usmle.org/exam-resources/step-3-materials/step-3-content-outline-and-specifications" },
     },
   ] satisfies UsaExamDetail[],
