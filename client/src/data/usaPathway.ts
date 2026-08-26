@@ -68,7 +68,7 @@ export const usaPathway = {
     },
     {
       title: "USMLE Step 1, Step 2 CK, and Step 3",
-      body: "Step 1 and Step 2 CK are central to ECFMG certification and residency applications. Step 3 is later and may support licensing or certain visa strategies.",
+      body: "USMLE registration depends on the official eligibility rules for your situation. This guide does not mean you can start an exam before graduation; confirm your eligibility with the registration entity before booking any Step.",
       details: [
         "Step 1 is reported as pass or fail; Step 2 CK reports a three-digit score.",
         "Step 3 is a two-day exam focused on independent general medical practice.",
@@ -124,8 +124,8 @@ export const usaPathway = {
     },
   ] satisfies UsaExamDetail[],
   stages: [
-    { number: 1, title: "Finish medical school", body: "Complete your medical degree and keep your diploma, transcript, internship, and identity documents ready for IMG verification." },
-    { number: 2, title: "Complete the core exams and English requirement", body: "Plan Step 1, Step 2 CK, OET Medicine, and the applicable ECFMG Pathways requirements for your application year." },
+    { number: 1, title: "First: finish medical school", body: "This is the prerequisite starting point in this simplified IMG pathway. Complete your medical degree, then keep your diploma, transcript, internship, and identity documents ready for verification." },
+    { number: 2, title: "After graduation: confirm eligibility, then register", body: "After graduation, confirm your eligibility with ECFMG/USMLE and the applicable registration entity before scheduling Step 1, Step 2 CK, OET Medicine, or any other requirement. Do not book an exam based on this guide alone." },
     { number: 3, title: "Complete ECFMG certification", body: "Create your MyIntealth account, verify your school and credentials, complete the applicable pathway, and meet the communication requirement." },
     { number: 4, title: "Build the IMG application", body: "Add suitable U.S. clinical experience where possible, prepare your CV and personal statement, and request strong letters of recommendation." },
     { number: 5, title: "Apply through ERAS and interview", body: "Research IMG-friendly programs, check graduation-year and visa rules, submit through ERAS, and prepare for interviews." },
