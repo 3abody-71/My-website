@@ -110,6 +110,8 @@ export const usaPathway = {
       result: "Three-digit score",
       body: "Step 2 CK assesses clinical science and the ability to apply knowledge to patient care under supervision.",
       subjects: ["Medicine", "Pediatrics", "Obstetrics and gynecology", "Psychiatry", "Surgery", "Nutrition, prevention, patient safety, professionalism, and biostatistics"],
+      image: image("step2-score-report.jpg"),
+      imageAlt: "Example USMLE Step 2 CK score report",
       source: { label: "USMLE Step 2 CK content", url: "https://www.usmle.org/exam-resources/step-2-ck-materials/step-2-ck-content-outline-specifications" },
     },
     {
