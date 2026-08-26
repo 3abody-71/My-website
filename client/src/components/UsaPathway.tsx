@@ -123,10 +123,6 @@ export default function UsaPathway() {
                 </a>
               ))}
             </nav>
-            <div className="mt-5 flex items-center gap-3 rounded-xl border border-[#d9b4b7] bg-[#fff7f7] p-3">
-              <SafeImage src="/assets/usa/usa-reaction.gif" alt="Reaction to the expensive pathway" className="h-16 w-20 shrink-0 rounded-lg object-cover" />
-              <p className="text-xs leading-5 text-muted-foreground">Keep the ambition, then follow the checklist.</p>
-            </div>
           </div>
         </div>
         <div className="grid gap-4 border-t border-border bg-secondary/30 p-4 sm:grid-cols-[1fr_1.25fr] sm:p-5">
@@ -158,7 +154,7 @@ export default function UsaPathway() {
         <div className="mt-6">
           <div className="eyebrow">Exam details</div><h3 className="mt-1 text-xl font-extrabold">What you study and how results are reported</h3>
           <div className="mt-5 grid gap-5 lg:grid-cols-3">{usaPathway.examDetails.map((exam) => <article key={exam.title} className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">{exam.image ? <div className="h-48 bg-secondary"><SafeImage src={exam.image} alt={exam.imageAlt || exam.title} className="h-full w-full object-contain" /></div> : <div className="flex h-48 items-center justify-center bg-gradient-to-br from-[#eaf2ff] to-[#f8fbff] p-7 text-center"><div><GraduationCap className="mx-auto text-primary" size={42} /><p className="mt-3 text-xs font-bold text-primary">Clinical science and patient-care focus</p></div></div>}<div className="p-5"><div className="flex flex-wrap items-center justify-between gap-2"><span className="rounded-full bg-secondary px-3 py-1 text-[11px] font-extrabold uppercase tracking-wide text-primary">{exam.badge}</span><span className="text-xs font-extrabold text-[#267a5b]">{exam.result}</span></div><h4 className="mt-3 text-lg font-extrabold">{exam.title}</h4><p className="mt-2 text-sm leading-6 text-muted-foreground">{exam.body}</p><div className="mt-4 space-y-2">{exam.subjects.map((subject) => <div key={subject} className="flex items-start gap-2 text-xs leading-5"><CheckCircle2 size={14} className="mt-0.5 shrink-0 text-primary" />{subject}</div>)}</div><div className="mt-5 border-t border-border pt-4"><SourceLink label={exam.source.label} url={exam.source.url} /></div></div></article>)}</div>
-          <p className="mt-3 rounded-lg bg-secondary/60 p-3 text-xs leading-5 text-muted-foreground">The two images currently shown are Step 1 examples supplied for this update. Step 2 CK details are included above; a Step 2 score image can be added when you send one.</p>
+          <p className="mt-3 rounded-lg bg-secondary/60 p-3 text-xs leading-5 text-muted-foreground">The two report images currently shown are Step 1 examples. The latest attachments are screenshots of the website and Step 1 content, not an actual Step 2 CK score report; send the Step 2 report image itself and it can be placed here.</p>
         </div>
       </section>
 
