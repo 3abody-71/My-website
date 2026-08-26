@@ -68,11 +68,13 @@ export const usaPathway = {
     },
     {
       title: "USMLE Step 1, Step 2 CK, and Step 3",
-      body: "USMLE registration depends on the official eligibility rules for your situation. This guide does not mean you can start an exam before graduation; confirm your eligibility with the registration entity before booking any Step.",
+      body: "International medical students may take Step 1 and Step 2 CK before graduation when they meet the current ECFMG/USMLE eligibility rules. Graduation is not a universal prerequisite for these two exams.",
       details: [
+        "At application and on exam day, you must be officially enrolled in an eligible international medical school or be a qualifying graduate.",
+        "The school must be listed in the World Directory of Medical Schools as meeting ECFMG eligibility requirements, and the school may need to confirm enrollment and completion of the basic medical science component.",
         "Step 1 is reported as pass or fail; Step 2 CK reports a three-digit score.",
-        "Step 3 is a two-day exam focused on independent general medical practice.",
-        "Check the current ECFMG, USMLE, and program rules before scheduling.",
+        "Step 3 is different: it requires passing Step 1 and Step 2 CK, the relevant degree, ECFMG Certification, and a valid unexpired ECFMG Certificate for eligible IMGs.",
+        "Check the current ECFMG Information Booklet, USMLE Bulletin, and registration-entity rules before scheduling.",
       ],
       icon: "check",
     },
@@ -126,9 +128,9 @@ export const usaPathway = {
     },
   ] satisfies UsaExamDetail[],
   stages: [
-    { number: 1, title: "First: finish medical school", body: "This is the prerequisite starting point in this simplified IMG pathway. Complete your medical degree, then keep your diploma, transcript, internship, and identity documents ready for verification." },
-    { number: 2, title: "After graduation: confirm eligibility, then register", body: "After graduation, confirm your eligibility with ECFMG/USMLE and the applicable registration entity before scheduling Step 1, Step 2 CK, OET Medicine, or any other requirement. Do not book an exam based on this guide alone." },
-    { number: 3, title: "Complete ECFMG certification", body: "Create your MyIntealth account, verify your school and credentials, complete the applicable pathway, and meet the communication requirement." },
+    { number: 1, title: "Medical school: build your eligibility foundation", body: "Stay officially enrolled in an eligible international medical school. Confirm that the school meets ECFMG requirements and complete the basic medical science component when required for exam eligibility." },
+    { number: 2, title: "Step 1 and Step 2 CK: before or after graduation", body: "Eligible medical students may take Step 1 and Step 2 CK before graduation, or take them after graduation. At the time of application and on exam day, meet the current ECFMG/USMLE rules and complete any school certification required for your eligibility period." },
+    { number: 3, title: "After the exams: complete ECFMG certification", body: "After graduation, complete the applicable ECFMG Certification requirements, including credential verification and the communication requirement. Step 3 is a later step with separate eligibility requirements." },
     { number: 4, title: "Build the IMG application", body: "Add suitable U.S. clinical experience where possible, prepare your CV and personal statement, and request strong letters of recommendation." },
     { number: 5, title: "Apply through ERAS and interview", body: "Research IMG-friendly programs, check graduation-year and visa rules, submit through ERAS, and prepare for interviews." },
     { number: 6, title: "Enter the NRMP Match", body: "Register for the Match, rank programs carefully, and complete the visa, medical licensing, and onboarding steps for your program." },
@@ -180,6 +182,7 @@ export const usaPathway = {
   sources: [
     { label: "ECFMG fees", url: "https://www.ecfmg.org/fees/" },
     { label: "USMLE exam fees", url: "https://www.usmle.org/apply-exams" },
+    { label: "USMLE eligibility", url: "https://www.ecfmg.org/certification/eligibility-for-examination.html" },
     { label: "OET for ECFMG", url: "https://oet.com/ecfmg" },
     { label: "2027 ERAS fees", url: "https://students-residents.aamc.org/applying-residencies-eras/publication-chapters/fees-2027-eras-season" },
     { label: "NRMP Match fees", url: "https://www.nrmp.org/intro-to-the-match/match-fees/" },
