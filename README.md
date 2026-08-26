@@ -1,8 +1,12 @@
 # MedPath Guide — Live Website Source
 
-This folder is the **exact corrected source code** behind the live MedPath Guide website:
+This repository contains the corrected source code for the MedPath Guide website.
 
-<https://medpathguide-ujau8sj3.manus.space/>
+The current GitHub Pages website is:
+
+<https://3abody-71.github.io/My-website/>
+
+The older Manus preview link is not automatically updated when this GitHub repository changes. Use the GitHub Pages link above to view the version built from the `main` branch.
 
 It includes the original country pathways, specialty explorer and detail pages, saved-profile interactions, USA and Germany deep-dive sections, hospital cards, styling, application configuration, and the white-page production fix.
 
