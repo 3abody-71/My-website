@@ -18,6 +18,7 @@ import {
   Users,
 } from "lucide-react";
 import { usaPathway, type UsaIconMap } from "../data/usaPathway";
+import { assetPath } from "../lib/assetPath";
 
 const ICONS: UsaIconMap = {
   award: BadgeCheck,
@@ -64,7 +65,7 @@ function SafeImage({ src, alt, className, loading = "lazy" }: { src: string; alt
   const [currentSrc, setCurrentSrc] = useState(src);
   return (
     <img
-      src={currentSrc}
+      src={assetPath(currentSrc)}
       alt={alt}
       loading={loading}
       className={className}

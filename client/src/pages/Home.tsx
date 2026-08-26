@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import countries from "../data/countries.json";
 import { useApp } from "../contexts/AppContext";
+import { assetPath } from "../lib/assetPath";
 
 function StatRow({
   icon: Icon,
@@ -56,7 +57,7 @@ function CountryCard({
         data-testid={`link-country-image-${country.id}`}
       >
         <img
-          src={country.image}
+          src={assetPath(country.image)}
           alt={`${country.name} medical pathway`}
           className="country-card-image-img"
           loading="lazy"
@@ -154,7 +155,7 @@ export default function Home() {
       {/* Hero */}
       <section className="home-hero fade-up overflow-hidden rounded-2xl p-6 shadow-lg sm:p-8 md:p-10">
         <img
-            src="/assets/media/hero-medical-students_cfadeffa.jpg"
+            src={assetPath("/assets/media/hero-medical-students_cfadeffa.jpg")}
           alt="Medical students working together in a hospital"
           className="home-hero-photo"
           aria-hidden="true"

@@ -13,6 +13,7 @@ import {
 import specialties from "../data/specialties.json";
 import countries from "../data/countries.json";
 import { useApp } from "../contexts/AppContext";
+import { assetPath } from "../lib/assetPath";
 
 const CATEGORIES = ["All", "Medicine", "Surgery", "Diagnostics", "Acute care"];
 const FEATURED_IDS = ["cardiology", "orthopaedic-surgery", "ophthalmology"];
@@ -121,7 +122,7 @@ export default function Explore() {
             <Reveal key={specialty.id} delay={index * 80}>
               <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(31,75,98,0.14)]">
                 <div className="specialty-card-image relative h-44 overflow-hidden">
-                  <img src={specialty.image} alt={`${specialty.name} visual`} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+                  <img src={specialty.image ? assetPath(specialty.image) : undefined} alt={`${specialty.name} visual`} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#092a3b]/80 via-[#092a3b]/10 to-transparent" />
                   <div className="absolute bottom-4 left-4 flex items-center gap-2 text-xs font-bold text-white"><span className="rounded-full bg-white/15 px-2.5 py-1 backdrop-blur">{specialty.category}</span><span className="rounded-full bg-white/15 px-2.5 py-1 backdrop-blur">{specialty.competitiveness}</span></div>
                 </div>
@@ -187,7 +188,7 @@ export default function Explore() {
               return (
                 <Reveal key={specialty.id} delay={(index % 3) * 50}>
                   <article className="flex h-full flex-col rounded-2xl border border-border bg-card p-5 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-md">
-                    {specialty.image && <img src={specialty.image} alt="" className="mb-4 h-24 w-full rounded-xl object-cover" />}
+                    {specialty.image && <img src={specialty.image ? assetPath(specialty.image) : undefined} alt="" className="mb-4 h-24 w-full rounded-xl object-cover" />}
                     <div className="flex items-start justify-between gap-2"><div><p className="text-[11px] font-bold uppercase tracking-wider text-primary">{specialty.category}</p><h3 className="mt-1 text-lg font-extrabold tracking-tight">{specialty.name}</h3></div><button onClick={() => toggleSpecialty(specialty.id)} className={`icon-button h-9 w-9 ${saved ? "text-primary" : ""}`} aria-label={`Save ${specialty.name}`}><Bookmark size={15} fill={saved ? "currentColor" : "none"} /></button></div>
                     <p className="mt-3 flex-1 text-sm leading-5 text-muted-foreground">{specialty.description}</p>
                     <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-[11px] font-bold text-muted-foreground"><span>Competitiveness: {specialty.competitiveness}</span><span>{specialty.workStyle}</span></div>

@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import specialties from "../data/specialties.json";
 import countries from "../data/countries.json";
 import { useApp } from "../contexts/AppContext";
+import { assetPath } from "../lib/assetPath";
 
 const PRIMARY_COUNTRY_IDS = ["usa", "uk", "australia", "canada", "germany", "ireland"];
 type SpecialtyRecord = (typeof specialties)[number] & {
@@ -58,7 +59,7 @@ export default function SpecialtyDetail() {
       <Reveal>
         <Link to="/explore" className="topbar-link inline-flex items-center gap-2 text-sm"><ArrowLeft size={14} /> Specialty pathways</Link>
         <section className="specialty-detail-hero relative mt-5 min-h-[390px] overflow-hidden rounded-[28px] text-white shadow-[0_18px_50px_rgba(30,110,146,0.18)]">
-          <img src={specialty.image} alt={`${specialty.name} visual`} className="absolute inset-0 h-full w-full object-cover" />
+          <img src={specialty.image ? assetPath(specialty.image) : undefined} alt={`${specialty.name} visual`} className="absolute inset-0 h-full w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#08293a] via-[#08293a]/90 to-[#08293a]/25" />
           <div className="relative z-10 flex min-h-[390px] flex-col justify-between p-7 sm:p-10 lg:p-12">
             <div className="flex flex-wrap items-start justify-between gap-4"><div><div className="eyebrow text-white/70">{specialty.category} · SPECIALTY GUIDE</div><h1 className="mt-4 max-w-2xl text-4xl font-extrabold tracking-[-0.05em] sm:text-6xl">{specialty.name}</h1></div><button onClick={() => toggleSpecialty(specialty.id)} className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-2.5 text-xs font-bold text-white backdrop-blur transition hover:bg-white/20"><Bookmark size={14} fill={saved ? "currentColor" : "none"} /> {saved ? "Saved" : "Save guide"}</button></div>

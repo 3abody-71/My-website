@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { germanyPathway, type IconName } from "../data/germanyPathway";
+import { assetPath } from "../lib/assetPath";
 
 const ICONS: Record<IconName, LucideIcon> = {
   badge: Award,
@@ -69,7 +70,7 @@ function PhotoSection({
     <section className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
       <div className={`grid lg:grid-cols-2 ${reverse ? "lg:[&>*:first-child]:order-2" : ""}`}>
         <div className="relative min-h-[280px] overflow-hidden bg-secondary lg:min-h-full">
-          <img src={src} alt={alt} className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+          <img src={assetPath(src)} alt={alt} className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0b2d3b]/55 via-transparent to-transparent" />
         </div>
         <div className="flex flex-col justify-center p-6 sm:p-8">

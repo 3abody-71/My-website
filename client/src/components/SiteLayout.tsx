@@ -16,6 +16,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
+import { assetPath } from "../lib/assetPath";
 
 const NAV_ITEMS = [
   { href: "/", label: "Countries", icon: Stethoscope },
@@ -59,7 +60,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
             data-testid="link-logo"
           >
             <span className="brand-mark grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-primary text-primary-foreground">
-              <img src="/assets/media/medpath-compass-permanent.png" alt="MedPath compass" className="h-8 w-8 object-contain" />
+              <img src={assetPath("/assets/media/medpath-compass-permanent.png")} alt="MedPath compass" className="h-8 w-8 object-contain" />
             </span>
             <span>
               <span className="brand-wordmark block">MedPath</span>
@@ -164,7 +165,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
         <div className="mx-auto flex max-w-[1450px] flex-col items-start justify-between gap-4 px-4 py-8 sm:px-6 md:flex-row md:items-center lg:px-10">
           <div className="flex items-center gap-3">
             <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-primary text-primary-foreground">
-              <img src="/assets/media/medpath-compass-permanent.png" alt="MedPath compass" className="h-7 w-7 object-contain" />
+              <img src={assetPath("/assets/media/medpath-compass-permanent.png")} alt="MedPath compass" className="h-7 w-7 object-contain" />
             </span>
             <span className="text-xs font-bold">MedPath Guide</span>
           </div>

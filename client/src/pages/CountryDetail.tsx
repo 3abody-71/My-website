@@ -4,6 +4,7 @@ import countries from "../data/countries.json";
 import { useApp } from "../contexts/AppContext";
 import GermanyPathway from "../components/GermanyPathway";
 import UsaPathway from "../components/UsaPathway";
+import { assetPath } from "../lib/assetPath";
 
 export default function CountryDetail() {
   const { id } = useParams<{ id: string }>();
@@ -46,7 +47,7 @@ export default function CountryDetail() {
       <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
         <div className="country-card-image h-56">
           <img
-            src={country.image}
+            src={assetPath(country.image)}
             alt={country.name}
             className="h-full w-full object-cover"
           />
