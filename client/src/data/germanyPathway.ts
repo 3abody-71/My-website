@@ -79,6 +79,7 @@ export type GermanyVisaType = {
 export type GermanyHospital = {
   state: string;
   name: string;
+  image: string;
   city: string;
   body: string;
   url: string;
@@ -387,6 +388,7 @@ export const germanyPathway = {
     {
       state: "Baden-Württemberg",
       name: "Heidelberg University Hospital",
+      image: "/assets/germany/hospitals/heidelberg-university-hospital.jpg",
       city: "Heidelberg",
       body: "A major university medical center with broad clinical, research, and teaching activity.",
       url: "https://www.klinikum.uni-heidelberg.de/en/",
@@ -394,6 +396,7 @@ export const germanyPathway = {
     {
       state: "Bavaria",
       name: "LMU Klinikum",
+      image: "/assets/germany/hospitals/lmu-klinikum.jpg",
       city: "Munich",
       body: "One of Germany's large university hospital systems, with extensive tertiary and academic departments.",
       url: "https://www.lmu-klinikum.de/",
@@ -401,6 +404,7 @@ export const germanyPathway = {
     {
       state: "Berlin",
       name: "Charité – Universitätsmedizin Berlin",
+      image: "/assets/germany/hospitals/charite-berlin.jpg",
       city: "Berlin",
       body: "A nationally prominent university medical center with many specialties and research programs.",
       url: "https://www.charite.de/en/",
@@ -408,6 +412,7 @@ export const germanyPathway = {
     {
       state: "Brandenburg",
       name: "University Hospital Brandenburg",
+      image: "/assets/germany/hospitals/university-hospital-brandenburg.jpg",
       city: "Brandenburg an der Havel",
       body: "A university hospital and teaching environment serving the Brandenburg region.",
       url: "https://www.uk-brandenburg.de/",
@@ -415,6 +420,7 @@ export const germanyPathway = {
     {
       state: "Bremen",
       name: "Klinikum Bremen-Mitte",
+      image: "/assets/germany/hospitals/klinikum-bremen-mitte.jpg",
       city: "Bremen",
       body: "A large municipal hospital with specialist departments and a central role in Bremen's hospital network.",
       url: "https://www.gesundheitnord.de/klinikum-bremen-mitte.html",
@@ -422,6 +428,7 @@ export const germanyPathway = {
     {
       state: "Hamburg",
       name: "University Medical Center Hamburg-Eppendorf (UKE)",
+      image: "/assets/germany/hospitals/uke-hamburg.jpg",
       city: "Hamburg",
       body: "A leading university medical center combining tertiary care, research, and medical education.",
       url: "https://www.uke.de/english/",
@@ -429,6 +436,7 @@ export const germanyPathway = {
     {
       state: "Hesse",
       name: "University Hospital Frankfurt",
+      image: "/assets/germany/hospitals/university-hospital-frankfurt.jpg",
       city: "Frankfurt am Main",
       body: "A broad university hospital connected to Goethe University and a major regional referral center.",
       url: "https://www.kgu.de/en/",
@@ -436,6 +444,7 @@ export const germanyPathway = {
     {
       state: "Lower Saxony",
       name: "Hannover Medical School (MHH)",
+      image: "/assets/germany/hospitals/hannover-medical-school.jpg",
       city: "Hannover",
       body: "A university medical center known for tertiary care, transplantation, research, and training.",
       url: "https://www.mhh.de/en",
@@ -443,6 +452,7 @@ export const germanyPathway = {
     {
       state: "Mecklenburg-Western Pomerania",
       name: "University Medicine Greifswald",
+      image: "/assets/germany/hospitals/university-medicine-greifswald.png",
       city: "Greifswald",
       body: "A university medical center serving the northeast with clinical, teaching, and research departments.",
       url: "https://www.medizin.uni-greifswald.de/en/",
@@ -450,6 +460,7 @@ export const germanyPathway = {
     {
       state: "North Rhine-Westphalia",
       name: "University Hospital Cologne",
+      image: "/assets/germany/hospitals/university-hospital-cologne.jpg",
       city: "Cologne",
       body: "A large academic hospital with extensive specialties and a major medical faculty.",
       url: "https://uk-koeln.de/en/",
@@ -457,6 +468,7 @@ export const germanyPathway = {
     {
       state: "Rhineland-Palatinate",
       name: "University Medical Center Mainz",
+      image: "/assets/germany/hospitals/university-medical-center-mainz.png",
       city: "Mainz",
       body: "The university medical center of Johannes Gutenberg University with broad clinical training opportunities.",
       url: "https://www.unimedizin-mainz.de/en/",
@@ -464,6 +476,7 @@ export const germanyPathway = {
     {
       state: "Saarland",
       name: "Saarland University Medical Center",
+      image: "/assets/germany/hospitals/saarland-university-medical-center.jpg",
       city: "Homburg",
       body: "A major university hospital and teaching center for the Saarland region.",
       url: "https://www.uniklinikum-saarland.de/en/",
@@ -471,6 +484,7 @@ export const germanyPathway = {
     {
       state: "Saxony",
       name: "University Hospital Carl Gustav Carus Dresden",
+      image: "/assets/germany/hospitals/university-hospital-dresden.jpg",
       city: "Dresden",
       body: "A large university hospital with broad tertiary services and strong academic links.",
       url: "https://www.uniklinikum-dresden.de/en",
@@ -478,6 +492,7 @@ export const germanyPathway = {
     {
       state: "Saxony-Anhalt",
       name: "University Hospital Halle (Saale)",
+      image: "/assets/germany/hospitals/university-hospital-halle.jpg",
       city: "Halle (Saale)",
       body: "A university hospital providing specialist care, medical education, and research in central Germany.",
       url: "https://www.umh.de/en/",
@@ -485,6 +500,7 @@ export const germanyPathway = {
     {
       state: "Schleswig-Holstein",
       name: "University Medical Center Schleswig-Holstein – Campus Lübeck",
+      image: "/assets/germany/hospitals/uksh-campus-luebeck.png",
       city: "Lübeck",
       body: "One of the two campuses of the state's university medical center, with a wide clinical and training portfolio.",
       url: "https://www.uksh.de/English.html",
@@ -492,6 +508,7 @@ export const germanyPathway = {
     {
       state: "Thuringia",
       name: "Jena University Hospital",
+      image: "/assets/germany/hospitals/jena-university-hospital.png",
       city: "Jena",
       body: "The university medical center of Friedrich Schiller University Jena and a central referral hospital for Thuringia.",
       url: "https://www.uniklinikum-jena.de/en/",
