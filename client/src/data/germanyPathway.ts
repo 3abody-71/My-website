@@ -347,6 +347,11 @@ export const germanyPathway = {
       body: "Changing specialty during training can be possible and is a real advantage compared with more rigid systems. Previous time is not automatically transferable: ask the State Chamber how each rotation will be credited before you move.",
       icon: "map",
     },
+    {
+      title: "Citizenship and passport timeline",
+      body: "The general route is naturalisation after more than 5 years of legal residence, if you have a qualifying residence status, can support yourself, meet the B1 German and naturalisation-test requirements, and satisfy the other legal conditions. Study residence alone is not sufficient. After naturalisation, apply separately for a German passport through the responsible passport authority in Germany or the German mission abroad. A medical residency, work visa, or EU Blue Card alone does not give citizenship or a passport.",
+      icon: "flag",
+    },
   ] satisfies GermanyLifeCard[],
   visaTypes: [
     {
@@ -546,6 +551,14 @@ export const germanyPathway = {
     {
       label: "German gross/net calculator reference",
       url: "https://www.bbx.de/grossnet-wage-calculator-germany/",
+    },
+    {
+      label: "German naturalisation requirements",
+      url: "https://www.make-it-in-germany.com/en/visa-residence/living-permanently/naturalisation",
+    },
+    {
+      label: "German passport information",
+      url: "https://www.auswaertiges-amt.de/en/visa-service/buergerservice/faq/606854-606854",
     },
   ],
 } as const;

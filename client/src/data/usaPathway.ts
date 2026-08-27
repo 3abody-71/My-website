@@ -164,7 +164,7 @@ export const usaPathway = {
   lifestyleCards: [
     { title: "Work–life balance", body: "Residency is demanding. Later balance depends on specialty, workplace, schedule, location, and your personal priorities.", icon: "clock" as UsaIconName },
     { title: "Opportunities", body: "IMGs can find opportunities in clinical medicine, research, teaching, public health, health technology, and administration.", icon: "briefcase" as UsaIconName },
-    { title: "Passport timeline", body: "Citizenship is commonly possible after about five years as a lawful permanent resident, if all requirements are met. Residency or a work visa alone does not give a passport.", icon: "flag" as UsaIconName },
+    { title: "Citizenship and passport timeline", body: "The general route is naturalisation after at least 5 years as a lawful permanent resident. USCIS also requires continuous residence, at least 30 months of physical presence during those 5 years, good moral character, English, civics, and the Oath of Allegiance. After naturalisation, apply separately for a first U.S. passport using Form DS-11 and your Certificate of Naturalization or Citizenship. A residency or work visa alone does not give citizenship or a passport.", icon: "flag" as UsaIconName },
   ],
   visaTypes: [
     { title: "J-1 Exchange Visitor", body: "Common for graduate medical education. ECFMG sponsorship is required for many physician trainees, and a two-year home-country residence rule may apply.", icon: "plane" },
@@ -187,6 +187,8 @@ export const usaPathway = {
     { label: "2027 ERAS fees", url: "https://students-residents.aamc.org/applying-residencies-eras/publication-chapters/fees-2027-eras-season" },
     { label: "NRMP Match fees", url: "https://www.nrmp.org/intro-to-the-match/match-fees/" },
     { label: "U.S. visa categories", url: "https://travel.state.gov/content/travel/en/us-visas/employment/temporary-worker-visas.html" },
+    { label: "USCIS naturalization requirements", url: "https://www.uscis.gov/citizenship/learn-about-citizenship/citizenship-and-naturalization/i-am-a-lawful-permanent-resident-of-5-years" },
+    { label: "U.S. passport after naturalization", url: "https://travel.state.gov/en/passports/apply/adults.html" },
   ],
   advantages: [
     "High physician salaries after training.",
