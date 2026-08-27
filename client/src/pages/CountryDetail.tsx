@@ -81,7 +81,7 @@ export default function CountryDetail() {
 
       {country.id === "usa" ? <UsaPathway /> : country.id === "germany" ? <GermanyPathway /> : null}
 
-      {country.id !== "usa" && (
+      {country.id !== "usa" && country.id !== "germany" && (
         <>
       {/* At a glance */}
       <section>
