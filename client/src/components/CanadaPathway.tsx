@@ -184,8 +184,8 @@ export default function CanadaPathway() {
         <div className="grid gap-4 border-t border-border bg-secondary/30 p-4 sm:grid-cols-[1fr_1.25fr] sm:p-5">
           <div className="overflow-hidden rounded-xl border border-border bg-card">
             <SafeImage
-              src="/assets/media/country-canada_b3c6f4ad.jpg"
-              alt="Toronto skyline and waterfront in Canada"
+              src="/assets/canada/canada-autumn-mountain.jpg"
+              alt="Autumn mountain town in Canada"
               className="h-40 w-full object-cover"
             />
           </div>
