@@ -4,6 +4,7 @@ import countries from "../data/countries.json";
 import { useApp } from "../contexts/AppContext";
 import GermanyPathway from "../components/GermanyPathway";
 import UsaPathway from "../components/UsaPathway";
+import CanadaPathway from "../components/CanadaPathway";
 import { assetPath } from "../lib/assetPath";
 
 export default function CountryDetail() {
@@ -11,14 +12,15 @@ export default function CountryDetail() {
   const navigate = useNavigate();
   const { savedCountryIds, toggleCountry } = useApp();
 
-  const country = countries.find((c) => c.id === id);
+  const country = countries.find(c => c.id === id);
 
   if (!country) {
     return (
       <div className="mx-auto max-w-xl rounded-2xl border border-dashed border-border bg-card p-10 text-center">
         <p className="text-lg font-extrabold">Pathway not found</p>
         <p className="mt-2 text-sm text-muted-foreground">
-          This country may have moved. Return to the pathway library to continue.
+          This country may have moved. Return to the pathway library to
+          continue.
         </p>
         <Link
           to="/"
@@ -79,148 +81,166 @@ export default function CountryDetail() {
         </div>
       </div>
 
-      {country.id === "usa" ? <UsaPathway /> : country.id === "germany" ? <GermanyPathway /> : null}
+      {country.id === "usa" ? (
+        <UsaPathway />
+      ) : country.id === "germany" ? (
+        <GermanyPathway />
+      ) : country.id === "canada" ? (
+        <CanadaPathway />
+      ) : null}
 
-      {country.id !== "usa" && country.id !== "germany" && (
-        <>
-      {/* At a glance */}
-      <section>
-        <h2 className="text-lg font-extrabold">At a glance</h2>
-        <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          <div className="rounded-xl border border-border bg-card p-4">
-            <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
-              Licensing body
-            </p>
-            <p className="mt-1 text-sm font-semibold">{country.licensingBody}</p>
-          </div>
-          <div className="rounded-xl border border-border bg-card p-4">
-            <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
-              Language evidence
-            </p>
-            <p className="mt-1 text-sm font-semibold">
-              {country.languageRequirement}
-            </p>
-          </div>
-          <div className="rounded-xl border border-border bg-card p-4">
-            <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
-              Residency range
-            </p>
-            <p className="mt-1 text-sm font-semibold">{country.residencyRange}</p>
-          </div>
-          <div className="rounded-xl border border-border bg-card p-4">
-            <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
-              Salary during training
-            </p>
-            <p className="mt-1 text-sm font-semibold">{country.salaryRange}</p>
-          </div>
-        </div>
-      </section>
+      {country.id !== "usa" &&
+        country.id !== "germany" &&
+        country.id !== "canada" && (
+          <>
+            {/* At a glance */}
+            <section>
+              <h2 className="text-lg font-extrabold">At a glance</h2>
+              <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                <div className="rounded-xl border border-border bg-card p-4">
+                  <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+                    Licensing body
+                  </p>
+                  <p className="mt-1 text-sm font-semibold">
+                    {country.licensingBody}
+                  </p>
+                </div>
+                <div className="rounded-xl border border-border bg-card p-4">
+                  <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+                    Language evidence
+                  </p>
+                  <p className="mt-1 text-sm font-semibold">
+                    {country.languageRequirement}
+                  </p>
+                </div>
+                <div className="rounded-xl border border-border bg-card p-4">
+                  <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+                    Residency range
+                  </p>
+                  <p className="mt-1 text-sm font-semibold">
+                    {country.residencyRange}
+                  </p>
+                </div>
+                <div className="rounded-xl border border-border bg-card p-4">
+                  <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+                    Salary during training
+                  </p>
+                  <p className="mt-1 text-sm font-semibold">
+                    {country.salaryRange}
+                  </p>
+                </div>
+              </div>
+            </section>
 
-      {/* Citizenship */}
-      <section className="citizenship-card rounded-2xl p-6">
-        <div className="flex items-center gap-2">
-          <Lock size={16} className="text-[#c77f1e]" />
-          <h2 className="text-base font-extrabold">
-            Citizenship timeline (general)
-          </h2>
-        </div>
-        <p className="mt-3 text-sm leading-6">{country.citizenshipTimeline}</p>
-        <p className="mt-4 rounded-lg bg-white/60 p-3 text-xs leading-5 text-muted-foreground">
-          General orientation only. Eligibility, residence type, language,
-          permanent residence, absences, and processing time matter. This is not
-          legal advice.
-        </p>
-        {country.officialAuthorityUrl && (
-          <a
-            href={country.officialAuthorityUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline"
-          >
-            Official guidance <ExternalLink size={12} />
-          </a>
+            {/* Citizenship */}
+            <section className="citizenship-card rounded-2xl p-6">
+              <div className="flex items-center gap-2">
+                <Lock size={16} className="text-[#c77f1e]" />
+                <h2 className="text-base font-extrabold">
+                  Citizenship timeline (general)
+                </h2>
+              </div>
+              <p className="mt-3 text-sm leading-6">
+                {country.citizenshipTimeline}
+              </p>
+              <p className="mt-4 rounded-lg bg-white/60 p-3 text-xs leading-5 text-muted-foreground">
+                General orientation only. Eligibility, residence type, language,
+                permanent residence, absences, and processing time matter. This
+                is not legal advice.
+              </p>
+              {country.officialAuthorityUrl && (
+                <a
+                  href={country.officialAuthorityUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline"
+                >
+                  Official guidance <ExternalLink size={12} />
+                </a>
+              )}
+            </section>
+
+            {/* Requirements + steps */}
+            <div className="grid gap-6 lg:grid-cols-2">
+              <section>
+                <h2 className="text-lg font-extrabold">Typical requirements</h2>
+                <ul className="mt-4 space-y-2.5">
+                  {country.requirements.map(req => (
+                    <li key={req} className="flex items-start gap-2.5 text-sm">
+                      <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                      {req}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+
+              <section>
+                <h2 className="text-lg font-extrabold">A practical sequence</h2>
+                <p className="mt-2 text-xs text-muted-foreground">
+                  The sequence is an orientation, not an application checklist.
+                  Requirements can differ by authority and program.
+                </p>
+                <ol className="mt-4 space-y-4">
+                  {country.steps.map((step, i) => (
+                    <li key={step} className="route-step">
+                      <span className="step-dot">{i + 1}</span>
+                      <p className="text-sm leading-5">{step}</p>
+                    </li>
+                  ))}
+                </ol>
+              </section>
+            </div>
+
+            {/* What the road looks like */}
+            <section>
+              <h2 className="text-lg font-extrabold">
+                What the road usually looks like
+              </h2>
+              <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">
+                Most international graduates move from language evidence and
+                primary source verification, through registration and supervised
+                clinical experience, into a structured training program, and
+                finally toward long-term residency options. The pace differs by
+                country, but the shape of the road is recognisable.
+              </p>
+            </section>
+
+            {/* Country updates */}
+            <section className="rounded-2xl border border-dashed border-border bg-card/60 p-6">
+              <div className="flex items-center gap-2">
+                <Milestone size={16} className="text-muted-foreground" />
+                <h2 className="text-base font-extrabold">Country updates</h2>
+              </div>
+              <p className="mt-2 text-sm text-muted-foreground">
+                These empty spaces are ready for a short country briefing, a
+                direct MP4 video link, or your own notes.
+              </p>
+              <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                <div className="rounded-xl border border-border bg-background/70 p-4 text-sm">
+                  <p className="font-bold">Country status letter</p>
+                  <p className="mt-1 text-xs text-muted-foreground">
+                    No briefing yet — you can add one later.
+                  </p>
+                </div>
+                <div className="rounded-xl border border-border bg-background/70 p-4 text-sm">
+                  <p className="font-bold">Country video</p>
+                  <p className="mt-1 text-xs text-muted-foreground">
+                    No video yet — you can add a direct video URL later.
+                  </p>
+                </div>
+              </div>
+              <div className="mt-4 flex flex-wrap items-center gap-2">
+                <button
+                  onClick={() => navigate("/questions")}
+                  className="btn-quiet inline-flex items-center gap-2 rounded-lg px-4 py-2 text-xs font-bold"
+                  data-testid={`button-add-letter-${country.id}`}
+                >
+                  <Info size={13} /> Add a video or status letter
+                </button>
+              </div>
+            </section>
+          </>
         )}
-      </section>
-
-      {/* Requirements + steps */}
-      <div className="grid gap-6 lg:grid-cols-2">
-        <section>
-          <h2 className="text-lg font-extrabold">Typical requirements</h2>
-          <ul className="mt-4 space-y-2.5">
-            {country.requirements.map((req) => (
-              <li key={req} className="flex items-start gap-2.5 text-sm">
-                <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                {req}
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-lg font-extrabold">A practical sequence</h2>
-          <p className="mt-2 text-xs text-muted-foreground">
-            The sequence is an orientation, not an application checklist.
-            Requirements can differ by authority and program.
-          </p>
-          <ol className="mt-4 space-y-4">
-            {country.steps.map((step, i) => (
-              <li key={step} className="route-step">
-                <span className="step-dot">{i + 1}</span>
-                <p className="text-sm leading-5">{step}</p>
-              </li>
-            ))}
-          </ol>
-        </section>
-      </div>
-
-      {/* What the road looks like */}
-      <section>
-        <h2 className="text-lg font-extrabold">What the road usually looks like</h2>
-        <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">
-          Most international graduates move from language evidence and primary
-          source verification, through registration and supervised clinical
-          experience, into a structured training program, and finally toward
-          long-term residency options. The pace differs by country, but the
-          shape of the road is recognisable.
-        </p>
-      </section>
-
-      {/* Country updates */}
-      <section className="rounded-2xl border border-dashed border-border bg-card/60 p-6">
-        <div className="flex items-center gap-2">
-          <Milestone size={16} className="text-muted-foreground" />
-          <h2 className="text-base font-extrabold">Country updates</h2>
-        </div>
-        <p className="mt-2 text-sm text-muted-foreground">
-          These empty spaces are ready for a short country briefing, a direct
-          MP4 video link, or your own notes.
-        </p>
-        <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          <div className="rounded-xl border border-border bg-background/70 p-4 text-sm">
-            <p className="font-bold">Country status letter</p>
-            <p className="mt-1 text-xs text-muted-foreground">
-              No briefing yet — you can add one later.
-            </p>
-          </div>
-          <div className="rounded-xl border border-border bg-background/70 p-4 text-sm">
-            <p className="font-bold">Country video</p>
-            <p className="mt-1 text-xs text-muted-foreground">
-              No video yet — you can add a direct video URL later.
-            </p>
-          </div>
-        </div>
-        <div className="mt-4 flex flex-wrap items-center gap-2">
-          <button
-            onClick={() => navigate("/questions")}
-            className="btn-quiet inline-flex items-center gap-2 rounded-lg px-4 py-2 text-xs font-bold"
-            data-testid={`button-add-letter-${country.id}`}
-          >
-            <Info size={13} /> Add a video or status letter
-          </button>
-        </div>
-      </section>
-        </>
-      )}
     </div>
   );
 }
