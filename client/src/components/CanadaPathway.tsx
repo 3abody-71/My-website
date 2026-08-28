@@ -507,6 +507,62 @@ export default function CanadaPathway() {
             </table>
           </div>
         </div>
+        <div className="mt-5 overflow-hidden rounded-2xl border border-[#b8dccf] bg-[#f3fbf7] p-6 shadow-sm">
+          <div className="flex items-start gap-4">
+            <IconBox
+              name="stethoscope"
+              className="bg-[#dff5e9] text-[#267a5b]"
+            />
+            <div>
+              <div className="eyebrow text-[#267a5b]">
+                Specialty outlook for IMGs
+              </div>
+              <h3 className="mt-1 text-2xl font-extrabold tracking-tight">
+                Family medicine is usually the most realistic IMG route in
+                Canada
+              </h3>
+              <p className="mt-3 max-w-4xl text-sm leading-6 text-muted-foreground">
+                Compared with many other specialties, family medicine has more
+                training and community-practice opportunities across Canadian
+                provinces, which makes it the most accessible and widely
+                available option for many eligible IMGs. It is still
+                competitive—not “easy”: you must meet the CaRMS or provincial
+                requirements, pass the required exams, prove language ability,
+                and accept that some programs may include geographic or
+                return-of-service obligations.
+              </p>
+            </div>
+          </div>
+          <div className="mt-5 grid gap-3 sm:grid-cols-3">
+            <div className="rounded-xl bg-white/75 p-4">
+              <p className="text-xs font-extrabold uppercase tracking-wide text-[#267a5b]">
+                More opportunities
+              </p>
+              <p className="mt-1 text-sm leading-5">
+                Family-medicine positions are distributed across urban,
+                regional, rural, and remote communities.
+              </p>
+            </div>
+            <div className="rounded-xl bg-white/75 p-4">
+              <p className="text-xs font-extrabold uppercase tracking-wide text-[#267a5b]">
+                Broader province options
+              </p>
+              <p className="mt-1 text-sm leading-5">
+                Applicants who are geographically flexible can compare more
+                communities and program streams.
+              </p>
+            </div>
+            <div className="rounded-xl bg-white/75 p-4">
+              <p className="text-xs font-extrabold uppercase tracking-wide text-[#267a5b]">
+                Not guaranteed
+              </p>
+              <p className="mt-1 text-sm leading-5">
+                Eligibility, exams, competition, language, and provincial rules
+                still determine your result.
+              </p>
+            </div>
+          </div>
+        </div>
         <div className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {canadaPathway.lifeCards.map(card => (
             <article
