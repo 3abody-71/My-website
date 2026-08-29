@@ -116,6 +116,87 @@ const stages = [
   ],
 ];
 
+const examDetails = [
+  {
+    name: "PLAB 1",
+    label: "Written licensing exam",
+    format:
+      "180 single-best-answer questions in 3 hours. Each question has five answer options and starts with a short clinical scenario.",
+    content:
+      "Tests the applied knowledge, clinical reasoning, ethics, communication, and safe-practice level expected of a doctor beginning the second year of the UK Foundation Programme (FY2).",
+    locations:
+      "Available in the UK and in a number of international countries. The GMC shows the current cities and dates inside GMC Online, so availability can change by diet.",
+    url: "https://www.gmc-uk.org/registration-and-licensing/join-our-registers/plab/a-guide-to-the-plab-test",
+  },
+  {
+    name: "PLAB 2",
+    label: "Practical OSCE",
+    format:
+      "16 clinical scenarios, each lasting 8 minutes, designed to reflect real-life settings such as consultations and acute-ward encounters.",
+    content:
+      "Assesses clinical examination, communication, history-taking, explaining and planning management, professionalism, patient safety, and the ability to deal with difficult or urgent situations.",
+    locations:
+      "Held at the GMC clinical assessment centre in Manchester, United Kingdom. PLAB 2 is not offered overseas, so international candidates must plan travel and any required visitor permission.",
+    url: "https://www.gmc-uk.org/registration-and-licensing/join-our-registers/plab/plab-2-guide",
+  },
+  {
+    name: "MRCP (UK) Part 1",
+    label: "Physician knowledge / written",
+    format:
+      "Two computer-based papers, 3 hours each, with 100 best-of-five questions per paper; 200 questions in total and no negative marking.",
+    content:
+      "Covers clinical sciences and common or important disorders across areas such as cardiology, respiratory, renal, neurology, infectious diseases, endocrinology, gastroenterology, rheumatology, haematology, and clinical pharmacology.",
+    locations:
+      "Computer-based at UK and international test centres. The Federation publishes the current centre list and may change delivery arrangements by exam diet.",
+    url: "https://www.thefederation.uk/examinations/part-1/format",
+  },
+  {
+    name: "MRCP (UK) Part 2 Written",
+    label: "Applied medicine / written",
+    format:
+      "Two computer-based papers, 3 hours each, with 100 best-of-five questions per paper; 200 questions in total and no negative marking.",
+    content:
+      "Questions may include clinical photographs, pathology, ECGs, X-rays, CT, MRI, echocardiograms, and investigation results. The focus is diagnosis, investigation, management, prognosis, and clinical problem-solving across the medical specialties.",
+    locations:
+      "Available at UK and international test centres listed by the Federation of the Royal Colleges of Physicians of the UK.",
+    url: "https://www.thefederation.uk/examinations/part-2/format",
+  },
+  {
+    name: "MRCP (UK) PACES",
+    label: "Clinical examination",
+    format:
+      "Five clinical stations, eight patient or surrogate encounters, and about 125 minutes including the changeover periods.",
+    content:
+      "Assesses physical examination, identifying signs, clinical communication, differential diagnosis, clinical judgement, managing patient concerns, and maintaining patient welfare. Encounters include communication, respiratory, cardiovascular, neurological, abdominal, and consultation stations.",
+    locations:
+      "Run in UK clinical centres and selected international centres, including locations across the Middle East, South Asia, Africa, Asia-Pacific, and the Caribbean. Places and centres vary by diet.",
+    url: "https://www.thefederation.uk/examinations/paces/format",
+  },
+];
+
+const passportSteps = [
+  [
+    "Start UK medical work",
+    "A GMC licence and an NHS job do not automatically create a route to citizenship. Most IMGs first hold a work visa such as Skilled Worker, subject to the rules in force.",
+  ],
+  [
+    "Usually around 5 years",
+    "If eligible, a qualifying work route may lead to indefinite leave to remain (ILR) after the required qualifying residence period. This is not automatic: salary, sponsorship, continuous residence, absences, English, and other requirements can matter.",
+  ],
+  [
+    "After ILR",
+    "For the standard naturalisation route, GOV.UK normally requires 5 years of UK residence and 12 months holding ILR or settled status. You usually need the Life in the UK Test, English-language evidence, good character, and the required residence and absence limits.",
+  ],
+  [
+    "Citizenship decision",
+    "A naturalisation application usually receives a decision within 6 months, although some cases take longer. Approval is followed by a citizenship ceremony and a certificate of naturalisation.",
+  ],
+  [
+    "British passport",
+    "Citizenship and a passport are separate. After receiving the naturalisation certificate, apply for the first British passport. HM Passport Office says you will usually receive it within 3 weeks after it receives the required documents, although cases needing more information can take longer.",
+  ],
+];
+
 const salaries = [
   [
     "Foundation training",
@@ -326,8 +407,8 @@ function UkPathway() {
         <div className="grid gap-4 border-t border-border bg-secondary/30 p-4 sm:grid-cols-[1fr_1.25fr] sm:p-5">
           <div className="overflow-hidden rounded-xl border border-border bg-card">
             <img
-              src={assetPath("/assets/uk/uk-reaction.gif")}
-              alt="Original sarcastic British reaction illustration"
+              src={assetPath("/assets/uk/uk-reaction-london.jpg")}
+              alt="London skyline with the Palace of Westminster, London Eye, and River Thames"
               className="h-40 w-full object-cover"
             />
           </div>
@@ -487,6 +568,73 @@ function UkPathway() {
             </div>
           </aside>
         </div>
+        <div className="mt-8 rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-7">
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <div className="eyebrow">Exam detail / content and locations</div>
+              <h3 className="mt-1 text-xl font-extrabold">
+                What do PLAB and MRCP actually test?
+              </h3>
+              <p className="mt-2 max-w-3xl text-sm leading-6 text-muted-foreground">
+                “MRC” is often used informally to mean MRCP (UK). PLAB is the
+                common IMG licensing assessment; MRCP (UK) is a postgraduate
+                physician examination made up of Part 1, Part 2 Written, and
+                PACES. They are different exams with different purposes.
+              </p>
+            </div>
+            <BookOpen
+              className="hidden shrink-0 text-primary sm:block"
+              size={22}
+            />
+          </div>
+          <div className="mt-5 grid gap-4 lg:grid-cols-2">
+            {examDetails.map(exam => (
+              <article
+                key={exam.name}
+                className="rounded-xl border border-border bg-secondary/30 p-5"
+              >
+                <div className="flex flex-wrap items-start justify-between gap-2">
+                  <h4 className="text-base font-extrabold">{exam.name}</h4>
+                  <span className="rounded-full bg-background px-2.5 py-1 text-[11px] font-bold text-primary">
+                    {exam.label}
+                  </span>
+                </div>
+                <p className="mt-3 text-sm font-semibold leading-6">
+                  {exam.format}
+                </p>
+                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                  {exam.content}
+                </p>
+                <div className="mt-3 rounded-lg border border-primary/15 bg-background/70 p-3 text-xs leading-5 text-muted-foreground">
+                  <span className="font-bold text-foreground">Where:</span>{" "}
+                  {exam.locations}
+                </div>
+                <a
+                  href={exam.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline"
+                >
+                  Official exam guidance <ArrowUpRight size={13} />
+                </a>
+              </article>
+            ))}
+          </div>
+          <div className="mt-5 flex flex-wrap gap-3 border-t border-border pt-4">
+            <SourceLink
+              label="GMC PLAB guide"
+              url="https://www.gmc-uk.org/registration-and-licensing/join-our-registers/plab/a-guide-to-the-plab-test"
+            />
+            <SourceLink
+              label="MRCP written centres"
+              url="https://www.thefederation.uk/examinations/part-1/uk-and-international-centres"
+            />
+            <SourceLink
+              label="MRCP PACES centres"
+              url="https://www.thefederation.uk/examinations/paces/centre-locations"
+            />
+          </div>
+        </div>
       </section>
 
       <section id="life-uk">
@@ -547,6 +695,60 @@ function UkPathway() {
               “qualifying as a consultant or GP.”
             </p>
           </article>
+        </div>
+        <div className="mt-7 rounded-2xl border border-[#d5e2f2] bg-[#f5f9ff] p-6 shadow-sm sm:p-7">
+          <div className="flex items-start gap-3">
+            <Globe2 className="mt-0.5 shrink-0 text-primary" size={20} />
+            <div>
+              <div className="eyebrow">
+                Passport roadmap / general orientation
+              </div>
+              <h3 className="mt-1 text-xl font-extrabold">
+                How long can an IMG expect to wait for a British passport?
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                For a doctor starting from overseas, a realistic minimum is
+                often about six years before citizenship eligibility on the
+                standard route: roughly five years of qualifying UK residence,
+                then usually 12 months with ILR or settled status. This is a
+                planning estimate, not a promise. Visa changes, gaps in
+                residence, absences, processing time, and personal circumstances
+                can make it longer.
+              </p>
+            </div>
+          </div>
+          <div className="mt-5 grid gap-3 md:grid-cols-5">
+            {passportSteps.map(([title, body], index) => (
+              <div
+                key={title}
+                className="relative rounded-xl border border-[#d5e2f2] bg-white/80 p-4"
+              >
+                <div className="text-xs font-extrabold text-primary">
+                  0{index + 1}
+                </div>
+                <h4 className="mt-2 text-sm font-extrabold leading-5">
+                  {title}
+                </h4>
+                <p className="mt-2 text-xs leading-5 text-muted-foreground">
+                  {body}
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-5 flex flex-wrap gap-3 border-t border-[#d5e2f2] pt-4">
+            <SourceLink
+              label="Citizenship with ILR"
+              url="https://www.gov.uk/apply-citizenship-indefinite-leave-to-remain"
+            />
+            <SourceLink
+              label="First adult passport"
+              url="https://www.gov.uk/apply-first-adult-passport"
+            />
+            <SourceLink
+              label="HM Passport Office timing"
+              url="https://www.gov.uk/government/organisations/hm-passport-office/about/about-our-services"
+            />
+          </div>
         </div>
       </section>
 
@@ -719,7 +921,7 @@ export const ukPathwayNote =
 
 export const ukPathwayComponents = { SectionHeading, IconBox, SourceLink };
 
-export const ukPathwayVersion = 1;
+export const ukPathwayVersion = 2;
 
 export const ukPathwayFlags = {
   includesPlab: true,
@@ -740,6 +942,15 @@ export const ukPathwaySources = [
   "https://www.gmc-uk.org/registration-and-licensing/join-our-registers/before-you-apply-guide-for-doctors/check-if-your-practical-training-internship-is-acceptable",
   "https://www.healthcareers.nhs.uk/explore-roles/doctors/pay-doctors",
   "https://www.gov.uk/british-citizenship",
+  "https://www.gmc-uk.org/registration-and-licensing/join-our-registers/plab/a-guide-to-the-plab-test",
+  "https://www.thefederation.uk/examinations/part-1/format",
+  "https://www.thefederation.uk/examinations/part-2/format",
+  "https://www.thefederation.uk/examinations/paces/format",
+  "https://www.thefederation.uk/examinations/part-1/uk-and-international-centres",
+  "https://www.thefederation.uk/examinations/paces/centre-locations",
+  "https://www.gov.uk/apply-citizenship-indefinite-leave-to-remain",
+  "https://www.gov.uk/apply-first-adult-passport",
+  "https://www.gov.uk/government/organisations/hm-passport-office/about/about-our-services",
 ];
 
 export const ukPathwayData = {
@@ -771,16 +982,16 @@ export const ukPathwayDescription =
 
 export const ukPathwayLastReviewed = "2026-08-29";
 
-export const ukPathwayHasGif = true;
+export const ukPathwayHasGif = false;
 
-export const ukPathwayImage = "/assets/uk/uk-reaction.gif";
+export const ukPathwayImage = "/assets/uk/uk-reaction-london.jpg";
 
 export const ukPathwayCountryId = "uk";
 
 export const ukPathwayLanguage = "English";
 
 export const ukPathwayLicenseNote =
-  "The reaction visual is an original generated illustration, not a Mr Bean frame.";
+  "The UK guide uses the user-supplied London skyline photo in the reaction-panel position.";
 
 export const ukPathwayEnd = true;
 
