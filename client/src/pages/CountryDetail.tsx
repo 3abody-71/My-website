@@ -5,6 +5,7 @@ import { useApp } from "../contexts/AppContext";
 import GermanyPathway from "../components/GermanyPathway";
 import UsaPathway from "../components/UsaPathway";
 import CanadaPathway from "../components/CanadaPathway";
+import UkPathway from "../components/UkPathway";
 import { assetPath } from "../lib/assetPath";
 
 export default function CountryDetail() {
@@ -87,11 +88,13 @@ export default function CountryDetail() {
         <GermanyPathway />
       ) : country.id === "canada" ? (
         <CanadaPathway />
+      ) : country.id === "uk" ? (
+        <UkPathway />
       ) : null}
-
       {country.id !== "usa" &&
         country.id !== "germany" &&
-        country.id !== "canada" && (
+        country.id !== "canada" &&
+        country.id !== "uk" && (
           <>
             {/* At a glance */}
             <section>
