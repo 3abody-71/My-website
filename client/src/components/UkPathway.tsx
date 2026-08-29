@@ -159,51 +159,69 @@ const competitive = [
 ];
 
 const hospitals = [
-  [
-    "Guy’s and St Thomas’ NHS Foundation Trust",
-    "London",
-    "Large teaching trust with major tertiary, specialist, and academic services.",
-  ],
-  [
-    "University College London Hospitals (UCLH)",
-    "London",
-    "Academic centre known for complex medicine, surgery, cancer, and research.",
-  ],
-  [
-    "Imperial College Healthcare NHS Trust",
-    "London",
-    "Major teaching trust linked to Imperial College London and specialist hospitals.",
-  ],
-  [
-    "King’s College Hospital NHS Foundation Trust",
-    "London",
-    "Tertiary centre with strong liver, neurosciences, maternity, and trauma services.",
-  ],
-  [
-    "Oxford University Hospitals NHS Foundation Trust",
-    "Oxford",
-    "University hospital group with broad tertiary care and research exposure.",
-  ],
-  [
-    "Cambridge University Hospitals NHS Foundation Trust",
-    "Cambridge",
-    "Academic centre including Addenbrooke’s Hospital and specialist services.",
-  ],
-  [
-    "Manchester University NHS Foundation Trust",
-    "Manchester",
-    "One of the UK’s largest trusts, spanning major adult and paediatric services.",
-  ],
-  [
-    "University Hospitals Birmingham NHS Foundation Trust",
-    "Birmingham",
-    "Large multi-site teaching trust including Queen Elizabeth Hospital Birmingham.",
-  ],
-  [
-    "University Hospitals Bristol and Weston NHS Foundation Trust",
-    "Bristol / Weston",
-    "Teaching trust with regional specialist, cardiac, paediatric, and surgical services.",
-  ],
+  {
+    name: "Guy’s and St Thomas’ NHS Foundation Trust",
+    city: "London",
+    body: "Large teaching trust with major tertiary, specialist, and academic services.",
+    image: "/assets/uk/hospitals/guys-hospital.jpg",
+    url: "https://www.guysandstthomas.nhs.uk/",
+  },
+  {
+    name: "University College London Hospitals (UCLH)",
+    city: "London",
+    body: "Academic centre known for complex medicine, surgery, cancer, and research.",
+    image: "/assets/uk/hospitals/uclh.jpg",
+    url: "https://www.uclh.nhs.uk/",
+  },
+  {
+    name: "Imperial College Healthcare NHS Trust",
+    city: "London",
+    body: "Major teaching trust linked to Imperial College London and specialist hospitals.",
+    image: "/assets/uk/hospitals/imperial-st-marys.jpg",
+    url: "https://www.imperial.nhs.uk/",
+  },
+  {
+    name: "King’s College Hospital NHS Foundation Trust",
+    city: "London",
+    body: "Tertiary centre with strong liver, neurosciences, maternity, and trauma services.",
+    image: "/assets/uk/hospitals/kings-college.jpg",
+    url: "https://www.kch.nhs.uk/",
+  },
+  {
+    name: "Oxford University Hospitals NHS Foundation Trust",
+    city: "Oxford",
+    body: "University hospital group with broad tertiary care and research exposure.",
+    image: "/assets/uk/hospitals/oxford.jpg",
+    url: "https://www.ouh.nhs.uk/",
+  },
+  {
+    name: "Cambridge University Hospitals NHS Foundation Trust",
+    city: "Cambridge",
+    body: "Academic centre including Addenbrooke’s Hospital and specialist services.",
+    image: "/assets/uk/hospitals/cambridge.jpg",
+    url: "https://www.cuh.nhs.uk/",
+  },
+  {
+    name: "Manchester University NHS Foundation Trust",
+    city: "Manchester",
+    body: "One of the UK’s largest trusts, spanning major adult and paediatric services.",
+    image: "/assets/uk/hospitals/manchester.jpg",
+    url: "https://mft.nhs.uk/",
+  },
+  {
+    name: "University Hospitals Birmingham NHS Foundation Trust",
+    city: "Birmingham",
+    body: "Large multi-site teaching trust including Queen Elizabeth Hospital Birmingham.",
+    image: "/assets/uk/hospitals/birmingham.jpg",
+    url: "https://www.uhb.nhs.uk/",
+  },
+  {
+    name: "University Hospitals Bristol and Weston NHS Foundation Trust",
+    city: "Bristol / Weston",
+    body: "Teaching trust with regional specialist, cardiac, paediatric, and surgical services.",
+    image: "/assets/uk/hospitals/bristol.jpg",
+    url: "https://www.uhbw.nhs.uk/",
+  },
 ];
 
 function SectionHeading({
@@ -257,9 +275,9 @@ function UkPathway() {
         <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
           <div className="relative min-h-[350px] overflow-hidden bg-[#1b2a3c]">
             <img
-              src={assetPath("/assets/media/country-uk_33d20666.jpg")}
+              src={assetPath("/assets/uk/uk-hero.jpg")}
               alt="United Kingdom pathway"
-              className="absolute inset-0 h-full w-full object-cover"
+              className="absolute inset-0 h-full w-full object-cover object-[center_30%]"
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-[#111d2d]/95 via-[#203c58]/45 to-[#9c303e]/35" />
             <div className="absolute inset-x-0 bottom-0 p-6 text-white sm:p-8">
@@ -590,24 +608,49 @@ function UkPathway() {
           body="These are prominent teaching and tertiary centres, not a promise of IMG recruitment or a ranking. Check the trust’s current vacancies, training accreditation, and eligibility rules before applying."
         />
         <div className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {hospitals.map(([name, city, body], index) => (
+          {hospitals.map((hospital, index) => (
             <article
-              key={name}
-              className="rounded-2xl border border-border bg-card p-5 shadow-sm"
+              key={hospital.name}
+              className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
             >
-              <div className="flex items-start justify-between gap-3">
-                <Building2 size={19} className="text-primary" />
-                <span className="text-xs font-bold text-muted-foreground">
-                  0{index + 1}
-                </span>
+              <div className="relative h-44 overflow-hidden bg-secondary">
+                <img
+                  src={assetPath(hospital.image)}
+                  alt={`${hospital.name} hospital exterior`}
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-gradient-to-t from-black/70 to-transparent p-4 pt-12 text-white">
+                  <p className="text-xs font-bold uppercase tracking-wider text-white/85">
+                    {hospital.city}
+                  </p>
+                  <span className="text-xs font-bold text-white/80">
+                    0{index + 1}
+                  </span>
+                </div>
               </div>
-              <h3 className="mt-4 text-base font-extrabold leading-5">
-                {name}
-              </h3>
-              <p className="mt-1 text-xs font-bold text-primary">{city}</p>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                {body}
-              </p>
+              <div className="p-5">
+                <div className="flex items-start gap-2">
+                  <Building2
+                    size={18}
+                    className="mt-0.5 shrink-0 text-primary"
+                  />
+                  <h3 className="text-base font-extrabold leading-5">
+                    {hospital.name}
+                  </h3>
+                </div>
+                <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                  {hospital.body}
+                </p>
+                <a
+                  href={hospital.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline"
+                >
+                  Official site <ArrowUpRight size={13} />
+                </a>
+              </div>
             </article>
           ))}
         </div>
