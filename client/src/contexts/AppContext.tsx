@@ -2,7 +2,10 @@ import React, { createContext, useContext, useEffect, useMemo, useState } from "
 
 export interface Profile {
   name: string;
+  email: string;
+  medicalSchool: string;
   currentCountry: string;
+  graduationYear: string;
   graduationStatus: string;
   targetCountries: string[];
   interests: string[];
@@ -47,7 +50,10 @@ export const WORK_STYLES = [
 
 export const DEFAULT_PROFILE: Profile = {
   name: "",
+  email: "",
+  medicalSchool: "",
   currentCountry: "",
+  graduationYear: "",
   graduationStatus: "",
   targetCountries: [],
   interests: [],
@@ -79,9 +85,10 @@ function loadJson<T>(key: string, fallback: T): T {
 }
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
-  const [profile, setProfile] = useState<Profile>(() =>
-    loadJson("medpath-profile", DEFAULT_PROFILE)
-  );
+  const [profile, setProfile] = useState<Profile>(() => ({
+    ...DEFAULT_PROFILE,
+    ...loadJson<Partial<Profile>>("medpath-profile", {}),
+  }));
   const [savedSpecialtyIds, setSavedSpecialtyIds] = useState<string[]>(() =>
     loadJson("medpath-saved-specialties", [])
   );

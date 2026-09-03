@@ -6,6 +6,7 @@ import SpecialtyDetail from "./pages/SpecialtyDetail";
 import CountryDetail from "./pages/CountryDetail";
 import Questions from "./pages/Questions";
 import Profile from "./pages/Profile";
+import Community from "./pages/Community";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/countries/:id" element={<CountryDetail />} />
         <Route path="/questions" element={<Questions />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/community" element={<Community />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </SiteLayout>

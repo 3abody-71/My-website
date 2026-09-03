@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { HelpCircle, Mail, Send, X } from "lucide-react";
+import { Link } from "react-router-dom";
+import { HelpCircle, Mail, Send, Users, X } from "lucide-react";
 import { useApp } from "../contexts/AppContext";
 
 export default function Questions() {
@@ -22,6 +23,13 @@ export default function Questions() {
           countries and specialties. When you are ready, send your question
           through the Contact Me button above.
         </p>
+        <Link
+          to="/community"
+          className="btn-quiet mt-4 inline-flex items-center gap-2 rounded-lg px-3 py-2 text-xs font-bold"
+          data-testid="link-questions-community"
+        >
+          <Users size={14} /> Browse Community discussions
+        </Link>
       </div>
 
       <section className="rounded-2xl border border-border bg-card p-6 shadow-sm">

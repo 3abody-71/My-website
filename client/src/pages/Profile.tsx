@@ -48,12 +48,14 @@ export default function Profile() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
-          Your profile
+        <div className="eyebrow">Your starting point</div>
+        <h1 className="mt-2 text-2xl font-extrabold tracking-tight sm:text-3xl">
+          Discover your pathway
         </h1>
-        <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-          A few details help MedPath Guide surface useful comparisons. You can
-          change these at any time.
+        <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">
+          Tell us a little about where you are today and what you are looking
+          for. We will use this foundation for future country and specialty
+          recommendations.
         </p>
       </div>
 
@@ -64,16 +66,40 @@ export default function Profile() {
           Keep it lightweight. This is your compass, not a CV.
         </p>
 
-        <div className="mt-5 grid gap-5 md:grid-cols-2">
+        <div className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           <label className="block">
             <span className="text-xs font-bold">Name</span>
             <input
               type="text"
               value={profile.name}
               onChange={(e) => update({ name: e.target.value })}
-              placeholder="Name"
+              placeholder="Your preferred name"
               className="mt-2 h-10 w-full rounded-lg border border-border bg-background/60 px-3 text-sm outline-hidden focus:border-primary/50 focus:ring-2 focus:ring-primary/15"
               data-testid="input-profile-name"
+            />
+          </label>
+
+          <label className="block">
+            <span className="text-xs font-bold">Email</span>
+            <input
+              type="email"
+              value={profile.email}
+              onChange={(e) => update({ email: e.target.value })}
+              placeholder="you@example.com"
+              className="mt-2 h-10 w-full rounded-lg border border-border bg-background/60 px-3 text-sm outline-hidden focus:border-primary/50 focus:ring-2 focus:ring-primary/15"
+              data-testid="input-profile-email"
+            />
+          </label>
+
+          <label className="block">
+            <span className="text-xs font-bold">Medical school</span>
+            <input
+              type="text"
+              value={profile.medicalSchool}
+              onChange={(e) => update({ medicalSchool: e.target.value })}
+              placeholder="University or medical school"
+              className="mt-2 h-10 w-full rounded-lg border border-border bg-background/60 px-3 text-sm outline-hidden focus:border-primary/50 focus:ring-2 focus:ring-primary/15"
+              data-testid="input-profile-medical-school"
             />
           </label>
 
@@ -86,6 +112,19 @@ export default function Profile() {
               placeholder="Current country"
               className="mt-2 h-10 w-full rounded-lg border border-border bg-background/60 px-3 text-sm outline-hidden focus:border-primary/50 focus:ring-2 focus:ring-primary/15"
               data-testid="input-current-country"
+            />
+          </label>
+
+          <label className="block">
+            <span className="text-xs font-bold">Graduation year</span>
+            <input
+              type="text"
+              inputMode="numeric"
+              value={profile.graduationYear}
+              onChange={(e) => update({ graduationYear: e.target.value })}
+              placeholder="e.g. 2026"
+              className="mt-2 h-10 w-full rounded-lg border border-border bg-background/60 px-3 text-sm outline-hidden focus:border-primary/50 focus:ring-2 focus:ring-primary/15"
+              data-testid="input-profile-graduation-year"
             />
           </label>
 

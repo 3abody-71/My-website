@@ -89,6 +89,7 @@ body {
   color: hsl(var(--muted-foreground));
   font-size: 14px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .topbar-link.active {
@@ -356,4 +357,38 @@ body {
     transform: none;
     transition: none;
   }
+}
+
+.community-hero {
+  background: linear-gradient(120deg, #0e4058, #1e7898 62%, #4aaabb);
+}
+
+.community-hero-orbit {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  right: -90px;
+  top: -160px;
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 999px;
+  box-shadow: 0 0 0 24px rgba(255, 255, 255, .06), 0 0 0 54px rgba(255, 255, 255, .035);
+}
+
+@media (max-width: 767px) {
+  .community-hero-orbit {
+    right: -190px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-primary,
+  .btn-quiet,
+  .btn-contact,
+  .community-hero button {
+    transition: none;
+  }
+}
+
+button:disabled {
+  transform: none;
 }

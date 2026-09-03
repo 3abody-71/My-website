@@ -9,6 +9,7 @@ import {
   Menu,
   X,
   Stethoscope,
+  Users,
 } from "lucide-react";
 import {
   DropdownMenu,
@@ -22,7 +23,8 @@ const NAV_ITEMS = [
   { href: "/", label: "Countries", icon: Stethoscope },
   { href: "/explore", label: "Specialties", icon: Compass },
   { href: "/questions", label: "Questions", icon: HelpCircle },
-  { href: "/profile", label: "My profile", icon: User },
+  { href: "/profile", label: "Discover your pathway", icon: User },
+  { href: "/community", label: "Community", icon: Users },
 ];
 
 const CONTACT_EMAIL = "contact@medpathguide.com";
@@ -74,7 +76,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
                 key={href}
                 to={href}
                 className={`topbar-link inline-flex items-center gap-2 ${isActive(href) ? "active" : ""}`}
-                data-testid={`link-nav-${label.toLowerCase().replace(" ", "-")}`}
+                data-testid={`link-nav-${label.toLowerCase().replace(/\s+/g, "-")}`}
               >
                 <Icon size={16} strokeWidth={1.9} />
                 {label}

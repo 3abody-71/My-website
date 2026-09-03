@@ -8,6 +8,7 @@ import {
   Compass,
   Globe,
   HelpCircle,
+  Users,
   Search,
   X,
 } from "lucide-react";
@@ -225,7 +226,14 @@ export default function Home() {
             className="btn-quiet inline-flex items-center gap-2 rounded-lg px-4 py-2.5 text-xs font-bold"
             data-testid="link-home-profile"
           >
-            Set my profile
+            <Compass size={14} /> Discover your pathway
+          </Link>
+          <Link
+            to="/community"
+            className="btn-quiet inline-flex items-center gap-2 rounded-lg px-4 py-2.5 text-xs font-bold"
+            data-testid="link-home-community"
+          >
+            <Users size={14} /> Community
           </Link>
         </div>
         <span className="text-xs font-bold text-muted-foreground">
