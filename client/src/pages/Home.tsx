@@ -155,8 +155,13 @@ export default function Home() {
     <div className="space-y-10">
       {/* Hero */}
       <section className="home-hero fade-up overflow-hidden rounded-2xl p-6 shadow-lg sm:p-8 md:p-10">
+        <div className="home-hero-background" aria-hidden="true">
+          <span className="home-hero-orb home-hero-orb-one" />
+          <span className="home-hero-orb home-hero-orb-two" />
+          <span className="home-hero-grid" />
+        </div>
         <img
-            src={assetPath("/assets/media/hero-medical-students_cfadeffa.jpg")}
+          src={assetPath("/assets/media/hero-medical-students_cfadeffa.jpg")}
           alt="Medical students working together in a hospital"
           className="home-hero-photo"
           aria-hidden="true"
